@@ -1,0 +1,245 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/controlUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:17 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/controlUnit.sv 
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# 
+# Top level modules:
+# 	controlUnit_tb
+# End time: 08:07:17 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/math.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:17 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/math.sv 
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# 	mult_testbench
+# End time: 08:07:17 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:18 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 08:07:18 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:18 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/regfile.sv 
+# -- Compiling module regfile
+# ** Warning: C:/469labs/lab3/regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/469labs/lab3/regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/469labs/lab3/regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/469labs/lab3/regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/469labs/lab3/regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/469labs/lab3/regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/469labs/lab3/regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/469labs/lab3/regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# Top level modules:
+# 	regfile
+# End time: 08:07:18 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/mux_32to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:19 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/mux_32to1.sv 
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# 
+# Top level modules:
+# 	mux_32to1_tb
+# End time: 08:07:19 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/mux_16to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:20 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/mux_16to1.sv 
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# 
+# Top level modules:
+# 	mux_16to1_tb
+# End time: 08:07:20 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/demux_1to8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:20 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/demux_1to8.sv 
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# 
+# Top level modules:
+# 	demux_1to8_tb
+# End time: 08:07:20 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/demux_1to4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:21 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/demux_1to4.sv 
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# 
+# Top level modules:
+# 	demux_1to4_tb
+# End time: 08:07:21 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/decoder5_32.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:21 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/decoder5_32.sv 
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# 
+# Top level modules:
+# 	decoder5_32_tb
+# End time: 08:07:21 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/D_FF.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:21 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 08:07:21 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/mux_8to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:21 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/mux_8to1.sv 
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# 
+# Top level modules:
+# 	mux_8to1_tb
+# End time: 08:07:22 on Oct 18,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/mux_4to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:22 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/mux_4to1.sv 
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# 
+# Top level modules:
+# 	mux_4to1_tb
+# End time: 08:07:22 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/mux_2to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:22 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/mux_2to1.sv 
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# 
+# Top level modules:
+# 	mux_2to1_tb
+# End time: 08:07:22 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:22 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 08:07:22 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/adderSubtractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:22 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/adderSubtractor.sv 
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# 
+# Top level modules:
+# 	adderSubtractor_tb
+# End time: 08:07:22 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/norZeroFlag64bit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:22 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/norZeroFlag64bit.sv 
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# 
+# Top level modules:
+# 	norZeroFlag64bit_tb
+# End time: 08:07:22 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/mux64bit_2to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:22 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/mux64bit_2to1.sv 
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# 
+# Top level modules:
+# 	muxVariablebit_2to1_tb
+# End time: 08:07:22 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/CPU_toplevel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:22 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/CPU_toplevel.sv 
+# -- Compiling module CPU_toplevel
+# 
+# Top level modules:
+# 	CPU_toplevel
+# End time: 08:07:23 on Oct 18,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/469labs/lab3 {C:/469labs/lab3/adderSubtractor64.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:07:23 on Oct 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/469labs/lab3" C:/469labs/lab3/adderSubtractor64.sv 
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# 
+# Top level modules:
+# 	adderSubtractor64
+# 	adderSubtractor64_tb
+# End time: 08:07:23 on Oct 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.norZeroFlag64bit_tb
+# vsim work.norZeroFlag64bit_tb 
+# Start time: 08:07:58 on Oct 18,2025
+# Loading sv_std.std
+# Loading work.norZeroFlag64bit_tb
+# Loading work.norZeroFlag64bit
+add wave -position end  sim:/norZeroFlag64bit_tb/in
+add wave -position end  sim:/norZeroFlag64bit_tb/out
+run -all
+# Testing to see that when all bits of in are zero, the output is true
+# Testing to see that when all bits are one, the output is false
+# Testing to see that when not all bits are zero, the output is false
+# Testing to see that when all bits of in are zero, the output is true
+# End time: 08:08:29 on Oct 18,2025, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0

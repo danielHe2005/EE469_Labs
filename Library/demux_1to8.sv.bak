@@ -1,0 +1,18 @@
+module demux_1to8 #(parameter width = 1) (ena, sel, out);
+	input logic ena;
+	input logic [2:0] sel;
+	output logic [7:0] out;
+	logic [2:0] notSel;
+	
+	not not0(notSel[0], sel[0]);
+	not not1(notSel[1], sel[1]);
+	not not2(notSel[2], sel[2]);
+	and out0(out[0], ena, notSel[2], notSel[1], notSel[0]);
+	and out1(out[1], ena, notSel[2], notSel[1], sel[0]);
+	and out2(out[2], ena, notSel[2], sel[1], notSel[0]);
+	and out3(out[3], ena, notSel[2], sel[1], sel[0]);
+	and out4(out[4], ena, sel[2], notSel[1], notSel[0]);
+	and out5(out[5], ena, sel[2], notSel[1], sel[0]);
+	and out6(out[6], ena, sel[2], sel[1], notSel[0]);
+	and out7(out[7], ena, sel[2], sel[1], sel[0]);
+endmodule

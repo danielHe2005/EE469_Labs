@@ -1,0 +1,6 @@
+module mux_2to1(in1, in2, select, out)
+	input logic in1, in2;
+	input logic select
+	output 
+	
+endmodule

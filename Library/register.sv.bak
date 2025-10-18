@@ -1,0 +1,13 @@
+module register #(parameter width = 1) (in, clk, reset, writeEnable, out);
+	input logic clk, writeEnable, reset;
+	input logic [width:0] in;
+	output logic [width:0] out;
+	genvar i;
+	generate // generates the set of DFFs
+		for(i = 0; i < width; i++)begin
+			logic inter;
+			mux_2to1 m(in[i], out[i], writeEnable, inter);
+			D_FF flipFlop(.q(out[i]), .d(inter), .reset(reset), .clk(clk));
+		end
+	endgenerate
+endmodule

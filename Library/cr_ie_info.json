@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus_eda",
+		"comment" : "none",
+		"error_message" : "m_port_info.num_of_dimensions() == 1",
+		"source_file" : "/quartus/neto/wsc/wsc_port.cpp",
+		"line" : "409",
+		"stack_trace" : "\t0x7ff9cd785497: NETO_WSC + 0x5497 (?left_bit@WSC_PORT@@QEBAHXZ + 0x37)\n\t0x7ff9ecce488f: NETO_VLGO + 0x2488f (?write_port_declare@VLGO_SV_WRITER@@UEAAXPEAVWSC_PORT@@AEBVQEDAU_UTIL@@@Z + 0x14f)\n\t0x7ff9eccd71db: NETO_VLGO + 0x171db (?write_port_declarations@VLGO_WRITER@@QEAAXPEAVWSC_HIERARCHY_INFO@@AEBVQEDAU_UTIL@@@Z + 0xbb)\n\t0x7ff9eccd5983: NETO_VLGO + 0x15983 (?write_module_declare@VLGO_WRITER@@QEAAXPEAVWSC_HIERARCHY_INFO@@AEBVQEDAU_UTIL@@@Z + 0x133)\n\t0x7ff9eccd536e: NETO_VLGO + 0x1536e (?write_module@VLGO_WRITER@@UEAAXPEAVWSC_HIERARCHY_INFO@@AEBVQEDAU_UTIL@@@Z + 0xde)\n\t0x7ff9eccd241d: NETO_VLGO + 0x1241d (?write_file@VLGO_WRITER@@UEAAXAEBVQEDAU_UTIL@@@Z + 0x7ed)\n\t0x7ff6edace2d4: quartus_eda + 0x1e2d4 (?generate_simulation_files@QNETO_START@@AEAAXW4WSC_NETLIST_TYPE@@AEBVQEDAU_UTIL@@W4DEV_FAMILY_ENUM@@@Z + 0xf64)\n\t0x7ff6edacf562: quartus_eda + 0x1f562 (?generate_simulation_files@QNETO_START@@QEAAXW4QEDA_CALL_TYPE@@AEBVQEDAU_UTIL@@@Z + 0x572)\n\t0x7ff6edac71df: quartus_eda + 0x171df (?generate_eda_files@QNETO_START@@QEAAXW4QEDA_CALL_TYPE@@AEBVQEDAU_UTIL@@@Z + 0x2f)\n\t0x7ff6edad757c: quartus_eda + 0x2757c (?generate_all_eda_files@@YA_NPEAVCMP_FACADE@@AEBVQEDAU_UTIL@@@Z + 0x4c)\n\t0x7ff6edad8190: quartus_eda + 0x28190 (?qneto_execute@@YA_NPEAVCMP_FACADE@@PEBD_N2V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@332AEBVQEDAU_UTIL@@@Z + 0x1a0)\n\t0x7ff6edab9b88: quartus_eda + 0x9b88 (?execute@QNETO_FRAMEWORK@@UEAA_NXZ + 0x288)\n\t0x7ffa288812bc: comp_qexe + 0x112bc (qexe_do_normal + 0x1ec)\n\t0x7ffa28886142: comp_qexe + 0x16142 (qexe_run + 0x432)\n\t0x7ffa28886e51: comp_qexe + 0x16e51 (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xc1)\n\t0x7ff6edabfaad: quartus_eda + 0xfaad (?qneto_main@@YAHHPEAPEBD@Z + 0x9d)\n\t0x7ffa1dd72d68: CCL_MSG + 0x12d68 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ffa1dd7454e: CCL_MSG + 0x1454e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ffa1dd45b00: ccl_mem + 0x15b00 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffa1dd72631: CCL_MSG + 0x12631 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff6edad9b32: quartus_eda + 0x29b32 (__tmainCRTStartup + 0x10e)\n\t0x7ffa3fd6e8d6: KERNEL32 + 0x2e8d6 (BaseThreadInitThunk + 0x16)\n\t0x7ffa40768d9b: ntdll + 0x8d9b (RtlUserThreadStart + 0x2b)\n",
+		"subsystem" : "WSC"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "17.0.0",
+		"build" : "595",
+		"edition" : "Lite Edition"
+	}
+}

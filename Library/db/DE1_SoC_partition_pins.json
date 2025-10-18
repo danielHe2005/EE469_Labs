@@ -1,0 +1,597 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_mux",
+					"strict" : false
+				},
+				{
+					"name" : "out_register",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[8]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[9]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[10]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[11]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[12]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[13]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[14]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[15]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[16]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[17]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[18]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[19]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[20]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[21]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[22]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[23]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[24]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[25]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[26]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[27]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[28]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[29]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[30]",
+					"strict" : false
+				},
+				{
+					"name" : "out_decoder[31]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[0]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[1]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[2]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[3]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[4]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[5]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[6]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[7]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[8]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[9]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[10]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[11]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[12]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[13]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[14]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[15]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[16]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[17]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[18]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[19]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[20]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[21]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[22]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[23]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[24]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[25]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[26]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[27]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[28]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[29]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[30]",
+					"strict" : false
+				},
+				{
+					"name" : "divided_clocks[31]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_mux[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_mux[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[7]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[8]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[9]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[10]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[11]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[12]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[13]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[14]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[15]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_mux[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_mux[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[16]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[20]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[24]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[28]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[17]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[21]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[25]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[29]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[18]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[22]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[26]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[30]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[19]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[23]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[27]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[31]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[32]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[33]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[34]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[35]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[36]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[37]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[38]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[39]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[40]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[41]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[42]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[43]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[44]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[45]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[46]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[47]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[48]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[52]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[56]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[60]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[49]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[53]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[57]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[61]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[50]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[54]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[58]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[62]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[51]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[55]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[59]",
+					"strict" : false
+				},
+				{
+					"name" : "in_mux[63]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_mux[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_mux[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ena_decoder",
+					"strict" : false
+				},
+				{
+					"name" : "sel_decoder[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_decoder[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_decoder[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_decoder[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_decoder[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "in_register",
+					"strict" : false
+				},
+				{
+					"name" : "writeEnable",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

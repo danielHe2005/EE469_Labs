@@ -1,0 +1,8 @@
+module adderSubtractor(A, B, Cin, sel, Sum, Cout);
+	input logic A, B, Cin, sel;
+	output logic Sum, Cout;
+	logic notB;
+	
+	not #(50) b_inverse(notB, B);
+	mux_2to1(
+	

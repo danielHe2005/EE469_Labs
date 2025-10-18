@@ -1,0 +1,2 @@
+module library_top(); // used to define a top level for this library
+endmodule

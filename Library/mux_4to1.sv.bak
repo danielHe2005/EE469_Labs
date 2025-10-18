@@ -1,0 +1,9 @@
+module mux_4to1 #(parameter width = 1) (in, sel, out);
+	input logic [width-1:0] in [3:0];
+	input logic [1:0] sel;
+	output logic [width-1:0] out;
+	logic interOne, interTwo;
+	mux_2to1 #(width) muxL0P1 (.in1(in[3]), .in0(in[2]), .sel(sel[0]), .out(interTwo));
+	mux_2to1 #(width) muxL0P2 (.in1(in[1]), .in0(in[0]), .sel(sel[0]), .out(interOne));
+	mux_2to1 #(width) muxL1P1 (.in1(interTwo), .in0(interOne), .sel(sel[1]), .out(out));
+endmodule

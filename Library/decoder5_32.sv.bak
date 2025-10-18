@@ -1,0 +1,13 @@
+module decoder5_32(ena, sel, reset, out);
+	input logic ena, reset;
+	input logic [4:0] sel;
+	output logic [31:0] out;
+	demux_1to8 bottom3Bit(ena, sel[2:0], {out[28], out[24], out[20], out[16], out[12], out[8], out[4], out[0]});
+	
+	genvar i;
+	generate
+		for(i = 0; i < 32; i++)begin: decodeArray
+			
+		end
+	endgenerate
+endmodule

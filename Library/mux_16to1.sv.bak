@@ -1,0 +1,10 @@
+// 16 to 1 mux that chooses between one of four choices in a 16 element array "in" depending on the sel input
+module mux_16to1 #(parameter width = 1) (in, sel, out);
+	input logic [width-1:0] in [15:0];
+	input logic [3:0] sel;
+	output logic [width-1:0] out;
+	logic interOne, interTwo;
+	mux_8to1 #(width) muxL0P1 (.in(in[15:8]), .sel(sel[2:0]), .out(interTwo)); // chooses between input 15-8 depending on the bottom 3 bit of sel
+	mux_8to1 #(width) muxL0P2 (.in(in[7:0]), .sel(sel[2:0]), .out(interOne)); // chooses between input 7-0 depending on the bottom 3 bit of sel
+	mux_2to1 #(width) muxL1P1 (.in1(interTwo), .in0(interOne), .sel(sel[3]), .out(out)); // chooses between the outcome of the first two muxes depending on the top bit of sel
+endmodule

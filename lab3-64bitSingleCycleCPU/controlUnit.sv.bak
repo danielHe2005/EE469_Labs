@@ -1,0 +1,5 @@
+module controlUnit(instr, BrTaken, UnCondBr, RegWrite, setFlags, MemWrite, MemToReg, ALUSrc, ITypetoB, Reg2Loc, shiftTrue, ALUOp);
+	input logic [31:0] instr;
+	output logic BrTaken, UnCondBr, RegWrite, setFlags, MemWrite, MemToReg, ALUSrc, ITypetoB, Reg2Loc, shiftTrue;
+	output logic [3:0] ALUOp;
+endmodule

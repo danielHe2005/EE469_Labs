@@ -1,0 +1,13 @@
+module demux_1to4 (ena, sel, out);
+	input logic ena;
+	input logic [1:0] sel;
+	output logic [3:0] out;
+	logic [1:0] notSel;
+	
+	not not0(notSel[0], sel[0]);
+	not not1(notSel[1], notSel[1]);
+	and out0(out[0], ena, notSel[1], notSel[0]);
+	and out1(out[1], ena, notSel[1], sel[0]);
+	and out2(out[2], ena, sel[1], notSel[0]);
+	and out3(out[3], ena, sel[1], sel[0]);
+endmodule
