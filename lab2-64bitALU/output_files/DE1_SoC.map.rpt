@@ -1,0 +1,1279 @@
+Analysis & Synthesis report for DE1_SoC
+Tue Oct 14 17:17:24 2025
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "mux_8to1:mux64Bit[63].outControl"
+ 11. Port Connectivity Checks: "mux_8to1:mux64Bit[62].outControl"
+ 12. Port Connectivity Checks: "mux_8to1:mux64Bit[61].outControl"
+ 13. Port Connectivity Checks: "mux_8to1:mux64Bit[60].outControl"
+ 14. Port Connectivity Checks: "mux_8to1:mux64Bit[59].outControl"
+ 15. Port Connectivity Checks: "mux_8to1:mux64Bit[58].outControl"
+ 16. Port Connectivity Checks: "mux_8to1:mux64Bit[57].outControl"
+ 17. Port Connectivity Checks: "mux_8to1:mux64Bit[56].outControl"
+ 18. Port Connectivity Checks: "mux_8to1:mux64Bit[55].outControl"
+ 19. Port Connectivity Checks: "mux_8to1:mux64Bit[54].outControl"
+ 20. Port Connectivity Checks: "mux_8to1:mux64Bit[53].outControl"
+ 21. Port Connectivity Checks: "mux_8to1:mux64Bit[52].outControl"
+ 22. Port Connectivity Checks: "mux_8to1:mux64Bit[51].outControl"
+ 23. Port Connectivity Checks: "mux_8to1:mux64Bit[50].outControl"
+ 24. Port Connectivity Checks: "mux_8to1:mux64Bit[49].outControl"
+ 25. Port Connectivity Checks: "mux_8to1:mux64Bit[48].outControl"
+ 26. Port Connectivity Checks: "mux_8to1:mux64Bit[47].outControl"
+ 27. Port Connectivity Checks: "mux_8to1:mux64Bit[46].outControl"
+ 28. Port Connectivity Checks: "mux_8to1:mux64Bit[45].outControl"
+ 29. Port Connectivity Checks: "mux_8to1:mux64Bit[44].outControl"
+ 30. Port Connectivity Checks: "mux_8to1:mux64Bit[43].outControl"
+ 31. Port Connectivity Checks: "mux_8to1:mux64Bit[42].outControl"
+ 32. Port Connectivity Checks: "mux_8to1:mux64Bit[41].outControl"
+ 33. Port Connectivity Checks: "mux_8to1:mux64Bit[40].outControl"
+ 34. Port Connectivity Checks: "mux_8to1:mux64Bit[39].outControl"
+ 35. Port Connectivity Checks: "mux_8to1:mux64Bit[38].outControl"
+ 36. Port Connectivity Checks: "mux_8to1:mux64Bit[37].outControl"
+ 37. Port Connectivity Checks: "mux_8to1:mux64Bit[36].outControl"
+ 38. Port Connectivity Checks: "mux_8to1:mux64Bit[35].outControl"
+ 39. Port Connectivity Checks: "mux_8to1:mux64Bit[34].outControl"
+ 40. Port Connectivity Checks: "mux_8to1:mux64Bit[33].outControl"
+ 41. Port Connectivity Checks: "mux_8to1:mux64Bit[32].outControl"
+ 42. Port Connectivity Checks: "mux_8to1:mux64Bit[31].outControl"
+ 43. Port Connectivity Checks: "mux_8to1:mux64Bit[30].outControl"
+ 44. Port Connectivity Checks: "mux_8to1:mux64Bit[29].outControl"
+ 45. Port Connectivity Checks: "mux_8to1:mux64Bit[28].outControl"
+ 46. Port Connectivity Checks: "mux_8to1:mux64Bit[27].outControl"
+ 47. Port Connectivity Checks: "mux_8to1:mux64Bit[26].outControl"
+ 48. Port Connectivity Checks: "mux_8to1:mux64Bit[25].outControl"
+ 49. Port Connectivity Checks: "mux_8to1:mux64Bit[24].outControl"
+ 50. Port Connectivity Checks: "mux_8to1:mux64Bit[23].outControl"
+ 51. Port Connectivity Checks: "mux_8to1:mux64Bit[22].outControl"
+ 52. Port Connectivity Checks: "mux_8to1:mux64Bit[21].outControl"
+ 53. Port Connectivity Checks: "mux_8to1:mux64Bit[20].outControl"
+ 54. Port Connectivity Checks: "mux_8to1:mux64Bit[19].outControl"
+ 55. Port Connectivity Checks: "mux_8to1:mux64Bit[18].outControl"
+ 56. Port Connectivity Checks: "mux_8to1:mux64Bit[17].outControl"
+ 57. Port Connectivity Checks: "mux_8to1:mux64Bit[16].outControl"
+ 58. Port Connectivity Checks: "mux_8to1:mux64Bit[15].outControl"
+ 59. Port Connectivity Checks: "mux_8to1:mux64Bit[14].outControl"
+ 60. Port Connectivity Checks: "mux_8to1:mux64Bit[13].outControl"
+ 61. Port Connectivity Checks: "mux_8to1:mux64Bit[12].outControl"
+ 62. Port Connectivity Checks: "mux_8to1:mux64Bit[11].outControl"
+ 63. Port Connectivity Checks: "mux_8to1:mux64Bit[10].outControl"
+ 64. Port Connectivity Checks: "mux_8to1:mux64Bit[9].outControl"
+ 65. Port Connectivity Checks: "mux_8to1:mux64Bit[8].outControl"
+ 66. Port Connectivity Checks: "mux_8to1:mux64Bit[7].outControl"
+ 67. Port Connectivity Checks: "mux_8to1:mux64Bit[6].outControl"
+ 68. Port Connectivity Checks: "mux_8to1:mux64Bit[5].outControl"
+ 69. Port Connectivity Checks: "mux_8to1:mux64Bit[4].outControl"
+ 70. Port Connectivity Checks: "mux_8to1:mux64Bit[3].outControl"
+ 71. Port Connectivity Checks: "mux_8to1:mux64Bit[2].outControl"
+ 72. Port Connectivity Checks: "mux_8to1:mux64Bit[1].outControl"
+ 73. Port Connectivity Checks: "mux_8to1:mux64Bit[0].outControl"
+ 74. Post-Synthesis Netlist Statistics for Top Partition
+ 75. Elapsed Time Per Partition
+ 76. Analysis & Synthesis Messages
+ 77. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Oct 14 17:17:24 2025       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE1_SoC                                     ;
+; Top-level Entity Name           ; alu                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 199                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; alu                ; DE1_SoC            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------+---------+
+; mux_8to1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/469labs/lab2/mux_8to1.sv         ;         ;
+; mux_4to1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/469labs/lab2/mux_4to1.sv         ;         ;
+; mux_2to1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/469labs/lab2/mux_2to1.sv         ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/469labs/lab2/alu.sv              ;         ;
+; adderSubtractor.sv               ; yes             ; User SystemVerilog HDL File  ; C:/469labs/lab2/adderSubtractor.sv  ;         ;
+; norZeroFlag64bit.sv              ; yes             ; User SystemVerilog HDL File  ; C:/469labs/lab2/norZeroFlag64bit.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 165            ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 241            ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 88             ;
+;     -- 5 input functions                    ; 25             ;
+;     -- 4 input functions                    ; 14             ;
+;     -- <=3 input functions                  ; 114            ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 199            ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; cntrl[1]~input ;
+; Maximum fan-out                             ; 138            ;
+; Total fan-out                               ; 1244           ;
+; Average fan-out                             ; 1.95           ;
++---------------------------------------------+----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name      ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+------------------+--------------+
+; |alu                                     ; 241 (0)             ; 0 (0)                     ; 0                 ; 0          ; 199  ; 0            ; |alu                                                           ; alu              ; work         ;
+;    |adderSubtractor:adderSub[10].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[10].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[10].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[11].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[11].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[11].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[12].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[12].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[12].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[13].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[13].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[13].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[14].addSub| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[14].addSub                       ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[15].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[15].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[15].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[16].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[16].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[16].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[17].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[17].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[17].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[18].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[18].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[18].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[19].addSub| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[19].addSub                       ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[1].addSub|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[1].addSub                        ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[20].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[20].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[20].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[21].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[21].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[21].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[22].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[22].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[22].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[23].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[23].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[23].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[24].addSub| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[24].addSub                       ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[25].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[25].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[25].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[26].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[26].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[26].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[27].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[27].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[27].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[28].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[28].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[28].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[29].addSub| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[29].addSub                       ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[2].addSub|  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[2].addSub                        ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[2].addSub|mux_2to1:b_or_inverse  ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[30].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[30].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[30].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[31].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[31].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[31].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[32].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[32].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[32].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[33].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[33].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[33].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[34].addSub| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[34].addSub                       ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[35].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[35].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[35].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[36].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[36].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[36].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[37].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[37].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[37].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[38].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[38].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[38].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[39].addSub| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[39].addSub                       ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[3].addSub|  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[3].addSub                        ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[3].addSub|mux_2to1:b_or_inverse  ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[40].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[40].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[40].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[41].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[41].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[41].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[42].addSub| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[42].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[42].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[43].addSub| ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[43].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[43].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[44].addSub| ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[44].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[44].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[45].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[45].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[45].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[46].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[46].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[46].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[47].addSub| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[47].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[47].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[48].addSub| ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[48].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[48].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[49].addSub| ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[49].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[49].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[4].addSub|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[4].addSub                        ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[50].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[50].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[50].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[51].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[51].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[51].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[52].addSub| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[52].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[52].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[53].addSub| ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[53].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[53].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[54].addSub| ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[54].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[54].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[55].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[55].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[55].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[56].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[56].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[56].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[57].addSub| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[57].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[57].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[58].addSub| ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[58].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[58].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[59].addSub| ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[59].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[59].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[5].addSub|  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[5].addSub                        ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[5].addSub|mux_2to1:b_or_inverse  ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[60].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[60].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[60].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[61].addSub| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[61].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[61].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[62].addSub| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[62].addSub                       ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[62].addSub|mux_2to1:b_or_inverse ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[63].addSub| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[63].addSub                       ; adderSubtractor  ; work         ;
+;    |adderSubtractor:adderSub[6].addSub|  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[6].addSub                        ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[6].addSub|mux_2to1:b_or_inverse  ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[7].addSub|  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[7].addSub                        ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[7].addSub|mux_2to1:b_or_inverse  ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[8].addSub|  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[8].addSub                        ; adderSubtractor  ; work         ;
+;       |mux_2to1:b_or_inverse|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[8].addSub|mux_2to1:b_or_inverse  ; mux_2to1         ; work         ;
+;    |adderSubtractor:adderSub[9].addSub|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:adderSub[9].addSub                        ; adderSubtractor  ; work         ;
+;    |adderSubtractor:firstAdd|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adderSubtractor:firstAdd                                  ; adderSubtractor  ; work         ;
+;    |mux_8to1:mux64Bit[0].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[0].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[0].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[10].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[10].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[10].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[11].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[11].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[11].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[12].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[12].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[12].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[13].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[13].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[13].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[14].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[14].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[14].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[15].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[15].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[15].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[16].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[16].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[16].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[17].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[17].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[17].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[18].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[18].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[18].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[19].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[19].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[19].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[1].outControl|     ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[1].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[1].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[20].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[20].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[20].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[21].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[21].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[21].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[22].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[22].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[22].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[23].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[23].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[23].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[24].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[24].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[24].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[25].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[25].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[25].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[26].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[26].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[26].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[27].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[27].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[27].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[28].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[28].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[28].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[29].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[29].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[29].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[2].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[2].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[2].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[30].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[30].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[30].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[31].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[31].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[31].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[32].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[32].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[32].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[33].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[33].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[33].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[34].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[34].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[34].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[35].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[35].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[35].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[36].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[36].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[36].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[37].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[37].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[37].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[38].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[38].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[38].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[39].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[39].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[39].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[3].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[3].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[3].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[40].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[40].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[40].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[41].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[41].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[41].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[42].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[42].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[42].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[43].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[43].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[43].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[44].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[44].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[44].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[45].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[45].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[45].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[46].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[46].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[46].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[47].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[47].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[47].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[48].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[48].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[48].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[49].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[49].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[49].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[4].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[4].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[4].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[50].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[50].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[50].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[51].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[51].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[51].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[52].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[52].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[52].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[53].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[53].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[53].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[54].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[54].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[54].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[55].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[55].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[55].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[56].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[56].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[56].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[57].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[57].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[57].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[58].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[58].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[58].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[59].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[59].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[59].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[5].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[5].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[5].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[60].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[60].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[60].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[61].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[61].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[61].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[62].outControl|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[62].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[62].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[63].outControl|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[63].outControl                          ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[63].outControl|mux_2to1:muxL1P1         ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[6].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[6].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[6].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[7].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[7].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[7].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[8].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[8].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[8].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |mux_8to1:mux64Bit[9].outControl|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[9].outControl                           ; mux_8to1         ; work         ;
+;       |mux_2to1:muxL1P1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|mux_8to1:mux64Bit[9].outControl|mux_2to1:muxL1P1          ; mux_2to1         ; work         ;
+;    |norZeroFlag64bit:zeroFlag|           ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|norZeroFlag64bit:zeroFlag                                 ; norZeroFlag64bit ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 5:1                ; 64 bits   ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; No         ; |alu|mux_8to1:mux64Bit[0].outControl|mux_2to1:muxL1P1|or1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[63].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[62].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[61].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[60].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[59].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[58].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[57].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[56].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[55].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[54].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[53].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[52].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[51].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[50].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[49].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[48].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[47].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[46].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[45].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[44].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[43].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[42].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[41].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[40].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[39].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[38].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[37].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[36].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[35].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[34].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[33].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[32].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[31].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[30].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[29].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[28].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[27].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[26].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[25].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[24].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[23].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[22].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[21].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[20].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[19].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[18].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[17].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[16].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[15].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[14].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[13].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[12].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[11].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[10].outControl" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                      ;
+; in[1] ; Input ; Info     ; Stuck at GND                      ;
++-------+-------+----------+-----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[9].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[8].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[7].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[6].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[5].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[4].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[3].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[2].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[1].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8to1:mux64Bit[0].outControl" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; in[7] ; Input ; Info     ; Stuck at GND                     ;
+; in[1] ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 243                         ;
+;     normal            ; 243                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 74                          ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 14                          ;
+;         5 data inputs ; 25                          ;
+;         6 data inputs ; 88                          ;
+; boundary_port         ; 199                         ;
+;                       ;                             ;
+; Max LUT depth         ; 28.00                       ;
+; Average LUT depth     ; 19.67                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Oct 14 17:17:16 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file alustim.sv
+    Info (12023): Found entity 1: alustim File: C:/469labs/lab2/alustim.sv Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file mux_8to1.sv
+    Info (12023): Found entity 1: mux_8to1 File: C:/469labs/lab2/mux_8to1.sv Line: 3
+    Info (12023): Found entity 2: mux_8to1_tb File: C:/469labs/lab2/mux_8to1.sv Line: 13
+Info (12021): Found 2 design units, including 2 entities, in source file mux_4to1.sv
+    Info (12023): Found entity 1: mux_4to1 File: C:/469labs/lab2/mux_4to1.sv Line: 3
+    Info (12023): Found entity 2: mux_4to1_tb File: C:/469labs/lab2/mux_4to1.sv Line: 13
+Info (12021): Found 2 design units, including 2 entities, in source file mux_2to1.sv
+    Info (12023): Found entity 1: mux_2to1 File: C:/469labs/lab2/mux_2to1.sv Line: 3
+    Info (12023): Found entity 2: mux_2to1_tb File: C:/469labs/lab2/mux_2to1.sv Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/469labs/lab2/alu.sv Line: 17
+Info (12021): Found 2 design units, including 2 entities, in source file addersubtractor.sv
+    Info (12023): Found entity 1: adderSubtractor File: C:/469labs/lab2/adderSubtractor.sv Line: 2
+    Info (12023): Found entity 2: adderSubtractor_tb File: C:/469labs/lab2/adderSubtractor.sv Line: 18
+Info (12021): Found 2 design units, including 2 entities, in source file norzeroflag64bit.sv
+    Info (12023): Found entity 1: norZeroFlag64bit File: C:/469labs/lab2/norZeroFlag64bit.sv Line: 2
+    Info (12023): Found entity 2: norZeroFlag64bit_tb File: C:/469labs/lab2/norZeroFlag64bit.sv Line: 20
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Info (12128): Elaborating entity "adderSubtractor" for hierarchy "adderSubtractor:firstAdd" File: C:/469labs/lab2/alu.sv Line: 26
+Info (12128): Elaborating entity "mux_2to1" for hierarchy "adderSubtractor:firstAdd|mux_2to1:b_or_inverse" File: C:/469labs/lab2/adderSubtractor.sv Line: 8
+Info (12128): Elaborating entity "mux_8to1" for hierarchy "mux_8to1:mux64Bit[0].outControl" File: C:/469labs/lab2/alu.sv Line: 38
+Info (12128): Elaborating entity "mux_4to1" for hierarchy "mux_8to1:mux64Bit[0].outControl|mux_4to1:muxL0P1" File: C:/469labs/lab2/mux_8to1.sv Line: 8
+Info (12128): Elaborating entity "norZeroFlag64bit" for hierarchy "norZeroFlag64bit:zeroFlag" File: C:/469labs/lab2/alu.sv Line: 43
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/469labs/lab2/output_files/DE1_SoC.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 440 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 131 input pins
+    Info (21059): Implemented 68 output pins
+    Info (21061): Implemented 241 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Tue Oct 14 17:17:24 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:14
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/469labs/lab2/output_files/DE1_SoC.map.smsg.
+
+

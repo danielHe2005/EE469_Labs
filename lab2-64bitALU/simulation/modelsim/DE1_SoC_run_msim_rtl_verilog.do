@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/469labs/lab2 {C:/469labs/lab2/mux_8to1.sv}
+vlog -sv -work work +incdir+C:/469labs/lab2 {C:/469labs/lab2/mux_4to1.sv}
+vlog -sv -work work +incdir+C:/469labs/lab2 {C:/469labs/lab2/mux_2to1.sv}
+vlog -sv -work work +incdir+C:/469labs/lab2 {C:/469labs/lab2/alu.sv}
+vlog -sv -work work +incdir+C:/469labs/lab2 {C:/469labs/lab2/adderSubtractor.sv}
+vlog -sv -work work +incdir+C:/469labs/lab2 {C:/469labs/lab2/norZeroFlag64bit.sv}
+
