@@ -1,0 +1,52 @@
+`timescale 1ps / 1ps
+module register #(parameter int width = 1) (in, clk, reset, writeEnable, out);
+	input logic clk, writeEnable, reset;
+	input logic [width-1:0] in;
+	output logic [width-1:0] out;
+	genvar i;
+	logic writeEnableClocked;
+	D_FF clockedWrite(.q(writeEnable), .d(writeEnableClocked), .reset(1'b0), .clk(clk)); // for ensuring no glitches accidentally contaminate the data
+	generate // generates the set of DFFs
+		for(i = 0; i < width; i++)begin: dffs
+			logic inter;
+			mux_2to1 m(in[i], out[i], writeEnableClocked, inter);
+			D_FF flipFlop(.q(out[i]), .d(inter), .reset(reset), .clk(clk));
+		end
+	endgenerate
+endmodule
+
+module register_tb();
+	logic clk, writeEnable, reset;
+	logic [3:0] in;
+	logic [3:0] out;
+	int i;
+	register #(4) dut(.in, .clk, .reset, .writeEnable, .out);
+	
+	parameter clock_period = 150;
+	initial begin
+		clk <= 0;
+		forever #(clock_period /2) clk <= ~clk;
+	end
+	
+	initial begin
+		reset <= 1; @(posedge clk);
+		reset <= 0; in <= 0; writeEnable <= 1; @(posedge clk);
+		writeEnable <= 0; @(posedge clk)
+		for(i = 0; i < 16; i++)begin // first tests to see if the register holds its original values when write enable is low
+			in <= i; @(posedge clk);
+			@(posedge clk);
+			$display("sel=%0d, out=%0d (expected %0d)", i, out, 0); // creates a display to show the intended and actual results if sel is i
+			assert (out == 0) else $error("MUX failed for sel=%0d: expected %0b, got %0b", i, 0, out);
+		end
+		writeEnable <= 1; @(posedge clk);
+		for(i = 0; i < 16; i++)begin // second tests to see if the register takes in the "in" values when write enable is high
+			in <= i; @(posedge clk);
+			@(posedge clk); // clock edge added since it takes time for the in to propagate through the mux
+			$display("sel=%0d, out=%0d (expected %0d)", i, out, i); // creates a display to show the intended and actual results if sel is i
+			assert (out == in) else $error("MUX failed for sel=%0d: expected %0b, got %0b", i, in, out);
+		end
+		$stop;
+	end
+	
+	
+endmodule

@@ -1,0 +1,154 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:15:36 on Oct 16,2025
+# vlog -reportprogress 300 ./D_FF.sv ./clock_divider.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./library_top.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./regfile.sv ./register.sv ./regstim.sv 
+# -- Compiling module D_FF
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module library_top
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	clock_divider_testbench
+# 	decoder5_32_tb
+# 	demux_1to4_tb
+# 	demux_1to8_tb
+# 	library_top
+# 	mux_16to1_tb
+# 	mux_2to1_tb
+# 	mux_32to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	register_tb
+# 	regstim
+# End time: 14:15:36 on Oct 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 14:15:37 on Oct 16,2025
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.demux_1to4
+# Loading work.register
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.mux_2to1
+# Loading work.D_FF
+# ** Warning: Design size of 9899 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tarta  Hostname: LUSANKYA  ProcessID: 23820
+#           Attempting to use alternate WLF file "./wlftf24w2z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftf24w2z
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# WriteData=160, out=0 (expected 0)
+# 7500.00 ns Writing pattern to all registers.
+# WriteData=0, out=x
+# WriteData=0, out=0 (expected 0)
+# WriteData=1108169195521, out=x
+# WriteData=1108169195521, out=1108169195521 (expected 1108169195521)
+# WriteData=2216338391042, out=x
+# WriteData=2216338391042, out=2216338391042 (expected 2216338391042)
+# WriteData=3324507586563, out=x
+# WriteData=3324507586563, out=3324507586563 (expected 3324507586563)
+# WriteData=4432676782084, out=x
+# WriteData=4432676782084, out=4432676782084 (expected 4432676782084)
+# WriteData=5540845977605, out=x
+# WriteData=5540845977605, out=5540845977605 (expected 5540845977605)
+# WriteData=6649015173126, out=x
+# WriteData=6649015173126, out=6649015173126 (expected 6649015173126)
+# WriteData=7757184368647, out=x
+# WriteData=7757184368647, out=7757184368647 (expected 7757184368647)
+# WriteData=8865353564168, out=x
+# WriteData=8865353564168, out=8865353564168 (expected 8865353564168)
+# WriteData=9973522759689, out=x
+# WriteData=9973522759689, out=9973522759689 (expected 9973522759689)
+# WriteData=11081691955210, out=x
+# WriteData=11081691955210, out=11081691955210 (expected 11081691955210)
+# WriteData=12189861150731, out=x
+# WriteData=12189861150731, out=12189861150731 (expected 12189861150731)
+# WriteData=13298030346252, out=x
+# WriteData=13298030346252, out=13298030346252 (expected 13298030346252)
+# WriteData=14406199541773, out=x
+# WriteData=14406199541773, out=14406199541773 (expected 14406199541773)
+# WriteData=15514368737294, out=x
+# WriteData=15514368737294, out=15514368737294 (expected 15514368737294)
+# WriteData=16622537932815, out=x
+# WriteData=16622537932815, out=16622537932815 (expected 16622537932815)
+# WriteData=17730707128336, out=x
+# WriteData=17730707128336, out=17730707128336 (expected 17730707128336)
+# WriteData=18838876323857, out=x
+# WriteData=18838876323857, out=18838876323857 (expected 18838876323857)
+# WriteData=19947045519378, out=x
+# WriteData=19947045519378, out=19947045519378 (expected 19947045519378)
+# WriteData=21055214714899, out=x
+# WriteData=21055214714899, out=21055214714899 (expected 21055214714899)
+# WriteData=22163383910420, out=x
+# WriteData=22163383910420, out=22163383910420 (expected 22163383910420)
+# WriteData=23271553105941, out=x
+# WriteData=23271553105941, out=23271553105941 (expected 23271553105941)
+# WriteData=24379722301462, out=x
+# WriteData=24379722301462, out=24379722301462 (expected 24379722301462)
+# WriteData=25487891496983, out=x
+# WriteData=25487891496983, out=25487891496983 (expected 25487891496983)
+# WriteData=26596060692504, out=x
+# WriteData=26596060692504, out=26596060692504 (expected 26596060692504)
+# WriteData=27704229888025, out=x
+# WriteData=27704229888025, out=27704229888025 (expected 27704229888025)
+# WriteData=28812399083546, out=x
+# WriteData=28812399083546, out=28812399083546 (expected 28812399083546)
+# WriteData=29920568279067, out=x
+# WriteData=29920568279067, out=29920568279067 (expected 29920568279067)
+# WriteData=31028737474588, out=x
+# WriteData=31028737474588, out=31028737474588 (expected 31028737474588)
+# WriteData=32136906670109, out=x
+# WriteData=32136906670109, out=32136906670109 (expected 32136906670109)
+# WriteData=33245075865630, out=x
+# WriteData=33245075865630, out=33245075865630 (expected 33245075865630)
+# 472500.00 ns Checking pattern.
+# ** Note: $stop    : ./regstim.sv(75)
+#    Time: 632500 ns  Iteration: 1  Instance: /regstim
+# Break in Module regstim at ./regstim.sv line 75
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab1/wave.do
+# End time: 15:02:50 on Oct 16,2025, Elapsed time: 0:47:13
+# Errors: 0, Warnings: 3
