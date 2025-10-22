@@ -3,15 +3,11 @@
 // two words of the address must be 0).
 //
 // To change the file that is loaded, edit the filename here:
-//`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test01_AddiB.arm"
+`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test01_AddiB.arm"
 //`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test02_AddsSubs.arm"
 //`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test03_CbzB.arm"
 //`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test04_LdurStur.arm"
 //`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test05_Blt.arm"
-//`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test06_AndEorLsr.arm"
-//`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test10_forwarding.arm"
-//`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test11_Sort.arm"
-`define BENCHMARK "C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test12_CRC16.arm"
 
 `timescale 1ns/10ps
 

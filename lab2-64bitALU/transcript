@@ -3,7 +3,7 @@ do runlab.do
 # 0
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:12:46 on Oct 14,2025
+# Start time: 08:07:26 on Oct 21,2025
 # vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
 # -- Compiling module adderSubtractor
 # -- Compiling module adderSubtractor_tb
@@ -25,10 +25,10 @@ do runlab.do
 # 	mux_4to1_tb
 # 	mux_8to1_tb
 # 	norZeroFlag64bit_tb
-# End time: 18:12:46 on Oct 14,2025, Elapsed time: 0:00:00
+# End time: 08:07:26 on Oct 21,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 18:12:46 on Oct 14,2025
+# Start time: 08:07:26 on Oct 21,2025
 # Loading sv_std.std
 # Loading work.alustim
 # Loading work.alu
@@ -37,807 +37,6 @@ do runlab.do
 # Loading work.norZeroFlag64bit
 # Loading work.mux_8to1
 # Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtract (no overflow)
-# ** Error: Subtraction No Overflow test failed! Expected result: -2, actual result: 18446744073709551614, carry_out expected: 1, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 1, negative actual: 1, zero expected: 0, zero actual: 0
-#    Time: 150 ns  Scope: alustim File: ./alustim.sv Line: 83
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:13:43 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 18:13:43 on Oct 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 18:13:43 on Oct 14,2025, Elapsed time: 0:00:57
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 18:13:43 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtract (no overflow)
-# ** Error: Subtraction No Overflow test failed! Expected result: -2, actual result: -2, carry_out expected: 1, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 1, negative actual: 1, zero expected: 0, zero actual: 0
-#    Time: 150 ns  Scope: alustim File: ./alustim.sv Line: 83
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:14:24 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 18:14:24 on Oct 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 18:14:25 on Oct 14,2025, Elapsed time: 0:00:42
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 18:14:25 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtract (no overflow)
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:38:38 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 19:38:39 on Oct 14,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 19:38:42 on Oct 14,2025, Elapsed time: 1:24:17
-# Errors: 24, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 19:38:42 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (overflow negative)
-# ** Error: Subtraction No Overflow test failed! Expected result: -2, actual result: 9223372036854775807, carry_out expected: 1, carry_out actual: 1, overflow expected: 0, overflow actual 1, negative expected: 1, negative actual: 0, zero expected: 0, zero actual: 0
-#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
-#  160.00 ns testing subtraction (overflow positive)
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:48:27 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 19:48:27 on Oct 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:48:28 on Oct 14,2025, Elapsed time: 0:09:46
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 19:48:28 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (overflow negative)
-# ** Error: Subtraction Overflow Negative test failed! Expected result: -2, actual result: 9223372036854775807, carry_out expected: 1, carry_out actual: 1, overflow expected: 0, overflow actual 1, negative expected: 1, negative actual: 0, zero expected: 0, zero actual: 0
-#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
-#  160.00 ns testing subtraction (overflow positive)
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:49:36 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 19:49:36 on Oct 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:49:37 on Oct 14,2025, Elapsed time: 0:01:09
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 19:49:37 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (overflow negative)
-# ** Error: Subtraction Overflow Negative test failed! Expected result: 9223372036854775807, actual result: 9223372036854775807, carry_out expected: 1, carry_out actual: 1, overflow expected: 0, overflow actual 1, negative expected: 1, negative actual: 0, zero expected: 0, zero actual: 0
-#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
-#  160.00 ns testing subtraction (overflow positive)
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:50:14 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 19:50:14 on Oct 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:50:15 on Oct 14,2025, Elapsed time: 0:00:38
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 19:50:16 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (overflow negative)
-#  160.00 ns testing subtraction (overflow positive)
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:51:38 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 19:51:39 on Oct 14,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 19:51:39 on Oct 14,2025, Elapsed time: 0:01:23
-# Errors: 24, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 19:51:40 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (zero)
-# ** Error: Subtraction Zero test failed! Expected result: 0, actual result: 0
-#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 90
-#  160.00 ns testing subtraction (overflow negative)
-#  170.00 ns testing subtraction (overflow positive)
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:54:05 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 19:54:05 on Oct 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:54:06 on Oct 14,2025, Elapsed time: 0:02:26
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 19:54:06 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (zero)
-# ** Error: Subtraction Zero test failed! Expected result: 0, actual result: 0, carry_out expected: 0, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 0, negative actual: 0, zero expected: 1, zero actual: 1
-#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
-#  160.00 ns testing subtraction (overflow negative)
-#  170.00 ns testing subtraction (overflow positive)
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:27:04 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 20:27:04 on Oct 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 20:27:05 on Oct 14,2025, Elapsed time: 0:32:59
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 20:27:05 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (zero)
-# ** Error: Subtraction Zero test failed! Expected result: 0, actual result: 0, carry_out expected: 0, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 0, negative actual: 0, zero expected: 1, zero actual: 1
-#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
-#  160.00 ns testing subtraction (overflow negative)
-#  170.00 ns testing subtraction (overflow positive)
-# ** Note: $stop    : ./alustim.sv(124)
-#    Time: 240 ns  Iteration: 0  Instance: /alustim
-# Break in Module alustim at ./alustim.sv line 124
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:35 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 20:54:36 on Oct 14,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 20:54:38 on Oct 14,2025, Elapsed time: 0:27:33
-# Errors: 25, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 20:54:38 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-#    0.00 ns testing PASS_B operations
-#  100.00 ns testing addition (no overflow)
-#  110.00 ns testing addition (zero)
-#  120.00 ns testing addition (overflow positive)
-#  130.00 ns testing addition (overflow negative)
-#  140.00 ns testing subtraction (no overflow)
-#  150.00 ns testing subtraction (zero)
-# ** Error: Subtraction Zero test failed! Expected result: 0, actual result: 0, carry_out expected: 0, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 0, negative actual: 0, zero expected: 1, zero actual: 1
-#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
-#  160.00 ns testing subtraction (overflow negative)
-#  170.00 ns testing subtraction (overflow positive)
-#  180.00 ns testing bitwise code: 100 when both inputs are all zeros
-#  190.00 ns testing bitwise code: 100 when both inputs are all ones
-#  200.00 ns testing bitwise code: 100 when one input is all ones and the other input is all zeros
-# Choosing random values of A and B for bitwise function
-# ** Error: Random input test failed! Expected result: 1001000001101001000000010, actual result: 1001000001101001000000010, negative expected: 0, negative actual: 0, zero expected: 0, zero actual: 0, test code: 100
-#    Time: 220 ns  Scope: alustim File: ./alustim.sv Line: 137
-#  240.00 ns testing bitwise code: 101 when both inputs are all zeros
-#  250.00 ns testing bitwise code: 101 when both inputs are all ones
-#  260.00 ns testing bitwise code: 101 when one input is all ones and the other input is all zeros
-# Choosing random values of A and B for bitwise function
-# ** Error: Random input test failed! Expected result: 1111111111111111111111111111111111111110110111100110100111111101, actual result: 1111111111111111111111111111111111111110110111100110100111111101, negative expected: 1, negative actual: 1, zero expected: 101110010110000100100101011100, zero actual: 0, test code: 101
-#    Time: 280 ns  Scope: alustim File: ./alustim.sv Line: 140
-# ** Error: Random input test failed! Expected result: 1111111111111111111111111111111110110110101011110111111001101101, actual result: 1111111111111111111111111111111110110110101011110111111001101101, negative expected: 1, negative actual: 1, zero expected: 1111111111111111111111111111111110010110101010110101100000101101, zero actual: 0, test code: 101
-#    Time: 290 ns  Scope: alustim File: ./alustim.sv Line: 140
-# ** Error: Random input test failed! Expected result: 1111111111111111111111111111111110110101111111111110011101101011, actual result: 1111111111111111111111111111111110110101111111111110011101101011, negative expected: 1, negative actual: 1, zero expected: 1111111111111111111111111111111110110001111011110110001001100011, zero actual: 0, test code: 101
-#    Time: 300 ns  Scope: alustim File: ./alustim.sv Line: 140
-#  300.00 ns testing bitwise code: 110 when both inputs are all zeros
-#  310.00 ns testing bitwise code: 110 when both inputs are all ones
-#  320.00 ns testing bitwise code: 110 when one input is all ones and the other input is all zeros
-# Choosing random values of A and B for bitwise function
-# ** Error: Random input test failed! Expected result: 1111111111111111111111111111111111010000010111110000001110100000, actual result: 1111111111111111111111111111111111010000010111110000001110100000, negative expected: 1, negative actual: 1, zero expected: 1111111111111111111111111111111111000000001110110010001010000000, zero actual: 0, test code: 110
-#    Time: 340 ns  Scope: alustim File: ./alustim.sv Line: 143
-# ** Error: Random input test failed! Expected result: 1111111111111111111111111111111110011011101101001000100100110111, actual result: 1111111111111111111111111111111110011011101101001000100100110111, negative expected: 1, negative actual: 1, zero expected: 1010101011110000100010110101010, zero actual: 0, test code: 110
-#    Time: 350 ns  Scope: alustim File: ./alustim.sv Line: 143
-# ** Error: Random input test failed! Expected result: 1000010101000111000011010000101, actual result: 1000010101000111000011010000101, negative expected: 0, negative actual: 0, zero expected: 1111111111111111111111111111111111001011001000000011111010010110, zero actual: 0, test code: 110
-#    Time: 360 ns  Scope: alustim File: ./alustim.sv Line: 143
-# ** Note: $stop    : ./alustim.sv(149)
-#    Time: 360 ns  Iteration: 0  Instance: /alustim
-# Break in Module alustim at ./alustim.sv line 149
-do runlab.do
-# 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:57:32 on Oct 14,2025
-# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
-# -- Compiling module adderSubtractor
-# -- Compiling module adderSubtractor_tb
-# -- Compiling module alu
-# -- Compiling module alustim
-# -- Compiling module mux_2to1
-# -- Compiling module mux_2to1_tb
-# -- Compiling module mux_4to1
-# -- Compiling module mux_4to1_tb
-# -- Compiling module mux_8to1
-# -- Compiling module mux_8to1_tb
-# -- Compiling module norZeroFlag64bit
-# -- Compiling module norZeroFlag64bit_tb
-# 
-# Top level modules:
-# 	adderSubtractor_tb
-# 	alustim
-# 	mux_2to1_tb
-# 	mux_4to1_tb
-# 	mux_8to1_tb
-# 	norZeroFlag64bit_tb
-# End time: 20:57:33 on Oct 14,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 20:57:34 on Oct 14,2025, Elapsed time: 0:02:56
-# Errors: 32, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
-# Start time: 20:57:34 on Oct 14,2025
-# Loading sv_std.std
-# Loading work.alustim
-# Loading work.alu
-# Loading work.adderSubtractor
-# Loading work.mux_2to1
-# Loading work.norZeroFlag64bit
-# Loading work.mux_8to1
-# Loading work.mux_4to1
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister1'.
-# Executing ONERROR command at macro ./wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadRegister2'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteRegister'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/regstim/WriteData'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/regstim/RegWrite'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/regstim/clk'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData1'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/regstim/ReadData2'.
-# Executing ONERROR command at macro ./wave.do line 10
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
@@ -869,6 +68,219 @@ do runlab.do
 # ** Note: $stop    : ./alustim.sv(149)
 #    Time: 360 ns  Iteration: 0  Instance: /alustim
 # Break in Module alustim at ./alustim.sv line 149
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab2/wave.do
-# End time: 21:28:16 on Oct 14,2025, Elapsed time: 0:30:42
-# Errors: 26, Warnings: 0
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:09:22 on Oct 21,2025
+# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module alu
+# -- Compiling module alustim
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# 
+# Top level modules:
+# 	adderSubtractor_tb
+# 	alustim
+# 	mux_2to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# End time: 08:09:22 on Oct 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 08:09:22 on Oct 21,2025, Elapsed time: 0:01:56
+# Errors: 2, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 08:09:22 on Oct 21,2025
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+#  100.00 ns testing addition (no overflow)
+#  110.00 ns testing addition (zero)
+#  120.00 ns testing addition (overflow positive)
+#  130.00 ns testing addition (overflow negative)
+#  140.00 ns testing subtraction (no overflow)
+#  150.00 ns testing subtraction (zero)
+# ** Error: Subtraction Zero test failed! Expected result: 0, actual result: 0, carry_out expected: 0, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 0, negative actual: 0, zero expected: 1, zero actual: 1
+#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
+#  160.00 ns testing subtraction (overflow negative)
+#  170.00 ns testing subtraction (overflow positive)
+#  180.00 ns testing bitwise code: 100 when both inputs are all zeros
+#  190.00 ns testing bitwise code: 100 when both inputs are all ones
+#  200.00 ns testing bitwise code: 100 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+# ** Error: Random input test failed! Expected result: 1001000001101001000000010, actual result: 1001000001101001000000010, negative expected: 0, negative actual: 0, zero expected: 0, zero actual: 0, test code: 100
+#    Time: 220 ns  Scope: alustim File: ./alustim.sv Line: 137
+#  240.00 ns testing bitwise code: 101 when both inputs are all zeros
+#  250.00 ns testing bitwise code: 101 when both inputs are all ones
+#  260.00 ns testing bitwise code: 101 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+#  300.00 ns testing bitwise code: 110 when both inputs are all zeros
+#  310.00 ns testing bitwise code: 110 when both inputs are all ones
+#  320.00 ns testing bitwise code: 110 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+# ** Note: $stop    : ./alustim.sv(149)
+#    Time: 360 ns  Iteration: 0  Instance: /alustim
+# Break in Module alustim at ./alustim.sv line 149
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:12:25 on Oct 21,2025
+# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module alu
+# -- Compiling module alustim
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# 
+# Top level modules:
+# 	adderSubtractor_tb
+# 	alustim
+# 	mux_2to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# End time: 08:12:25 on Oct 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 08:12:26 on Oct 21,2025, Elapsed time: 0:03:04
+# Errors: 2, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 08:12:26 on Oct 21,2025
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+#  100.00 ns testing addition (no overflow)
+#  110.00 ns testing addition (zero)
+#  120.00 ns testing addition (overflow positive)
+#  130.00 ns testing addition (overflow negative)
+#  140.00 ns testing subtraction (no overflow)
+#  150.00 ns testing subtraction (zero)
+# ** Error: Subtraction Zero test failed! Expected result: 0, actual result: 0, carry_out expected: 0, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 0, negative actual: 0, zero expected: 1, zero actual: 1
+#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
+#  160.00 ns testing subtraction (overflow negative)
+#  170.00 ns testing subtraction (overflow positive)
+#  180.00 ns testing bitwise code: 100 when both inputs are all zeros
+#  190.00 ns testing bitwise code: 100 when both inputs are all ones
+#  200.00 ns testing bitwise code: 100 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+# ** Error: Random input test failed! Expected result: 1001000001101001000000010, actual result: 1001000001101001000000010, negative expected: 0, negative actual: 0, zero expected: 0, zero actual: 0, test code: 100
+#    Time: 220 ns  Scope: alustim File: ./alustim.sv Line: 137
+#  240.00 ns testing bitwise code: 101 when both inputs are all zeros
+#  250.00 ns testing bitwise code: 101 when both inputs are all ones
+#  260.00 ns testing bitwise code: 101 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+#  300.00 ns testing bitwise code: 110 when both inputs are all zeros
+#  310.00 ns testing bitwise code: 110 when both inputs are all ones
+#  320.00 ns testing bitwise code: 110 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+# ** Note: $stop    : ./alustim.sv(149)
+#    Time: 360 ns  Iteration: 0  Instance: /alustim
+# Break in Module alustim at ./alustim.sv line 149
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:17:03 on Oct 21,2025
+# vlog -reportprogress 300 ./adderSubtractor.sv ./alu.sv ./alustim.sv ./mux_2to1.sv ./mux_4to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv 
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module alu
+# -- Compiling module alustim
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# 
+# Top level modules:
+# 	adderSubtractor_tb
+# 	alustim
+# 	mux_2to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# End time: 08:17:03 on Oct 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 08:17:04 on Oct 21,2025, Elapsed time: 0:04:38
+# Errors: 2, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 08:17:04 on Oct 21,2025
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_B operations
+#  100.00 ns testing addition (no overflow)
+#  110.00 ns testing addition (zero)
+#  120.00 ns testing addition (overflow positive)
+#  130.00 ns testing addition (overflow negative)
+#  140.00 ns testing subtraction (no overflow)
+#  150.00 ns testing subtraction (zero)
+# ** Error: Subtraction Zero test failed! Expected result: 0, actual result: 0, carry_out expected: 0, carry_out actual: 1, overflow expected: 0, overflow actual 0, negative expected: 0, negative actual: 0, zero expected: 1, zero actual: 1
+#    Time: 160 ns  Scope: alustim File: ./alustim.sv Line: 91
+#  160.00 ns testing subtraction (overflow negative)
+#  170.00 ns testing subtraction (overflow positive)
+#  180.00 ns testing bitwise code: 100 when both inputs are all zeros
+#  190.00 ns testing bitwise code: 100 when both inputs are all ones
+#  200.00 ns testing bitwise code: 100 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+# ** Error: Random input test failed! Expected result: 1001000001101001000000010, actual result: 1001000001101001000000010, negative expected: 0, negative actual: 0, zero expected: 0, zero actual: 0, test code: 100
+#    Time: 220 ns  Scope: alustim File: ./alustim.sv Line: 137
+#  240.00 ns testing bitwise code: 101 when both inputs are all zeros
+#  250.00 ns testing bitwise code: 101 when both inputs are all ones
+#  260.00 ns testing bitwise code: 101 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+#  300.00 ns testing bitwise code: 110 when both inputs are all zeros
+#  310.00 ns testing bitwise code: 110 when both inputs are all ones
+#  320.00 ns testing bitwise code: 110 when one input is all ones and the other input is all zeros
+# Choosing random values of A and B for bitwise function
+# ** Note: $stop    : ./alustim.sv(149)
+#    Time: 360 ns  Iteration: 0  Instance: /alustim
+# Break in Module alustim at ./alustim.sv line 149
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab2-64bitALU/wave.do
+# End time: 08:18:10 on Oct 21,2025, Elapsed time: 0:01:06
+# Errors: 2, Warnings: 0

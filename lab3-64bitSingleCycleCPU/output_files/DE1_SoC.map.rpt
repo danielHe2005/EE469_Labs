@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Sat Oct 18 09:27:27 2025
+Tue Oct 21 06:44:06 2025
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -38,10 +38,10 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat Oct 18 09:27:27 2025           ;
+; Analysis & Synthesis Status ; Failed - Tue Oct 21 06:44:06 2025           ;
 ; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name               ; DE1_SoC                                     ;
-; Top-level Entity Name       ; test                                        ;
+; Top-level Entity Name       ; CPU_toplevel                                ;
 ; Family                      ; Cyclone V                                   ;
 ; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
 ; Total registers             ; N/A until Partition Merge                   ;
@@ -59,7 +59,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; test               ; DE1_SoC            ;
+; Top-level entity name                                                           ; CPU_toplevel       ; DE1_SoC            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -162,100 +162,119 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Oct 18 09:27:17 2025
+    Info: Processing started: Tue Oct 21 06:43:29 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file controlunit.sv
-    Info (12023): Found entity 1: controlUnit File: C:/469labs/lab3/controlUnit.sv Line: 1
-    Info (12023): Found entity 2: controlUnit_tb File: C:/469labs/lab3/controlUnit.sv Line: 75
+    Info (12023): Found entity 1: controlUnit File: C:/469labs/lab3-64bitSingleCycleCPU/controlUnit.sv Line: 1
+    Info (12023): Found entity 2: controlUnit_tb File: C:/469labs/lab3-64bitSingleCycleCPU/controlUnit.sv Line: 76
 Info (12021): Found 4 design units, including 4 entities, in source file math.sv
-    Info (12023): Found entity 1: mult File: C:/469labs/lab3/math.sv Line: 6
-    Info (12023): Found entity 2: shifter File: C:/469labs/lab3/math.sv Line: 36
-    Info (12023): Found entity 3: shifter_testbench File: C:/469labs/lab3/math.sv Line: 51
-    Info (12023): Found entity 4: mult_testbench File: C:/469labs/lab3/math.sv Line: 71
-Info (12021): Found 2 design units, including 2 entities, in source file instructmem.sv
-    Info (12023): Found entity 1: instructmem File: C:/469labs/lab3/instructmem.sv Line: 17
-    Info (12023): Found entity 2: instructmem_testbench File: C:/469labs/lab3/instructmem.sv Line: 57
+    Info (12023): Found entity 1: mult File: C:/469labs/lab3-64bitSingleCycleCPU/math.sv Line: 6
+    Info (12023): Found entity 2: shifter File: C:/469labs/lab3-64bitSingleCycleCPU/math.sv Line: 36
+    Info (12023): Found entity 3: shifter_testbench File: C:/469labs/lab3-64bitSingleCycleCPU/math.sv Line: 51
+    Info (12023): Found entity 4: mult_testbench File: C:/469labs/lab3-64bitSingleCycleCPU/math.sv Line: 71
+Info (12021): Found 0 design units, including 0 entities, in source file instructmem.sv
 Info (12021): Found 2 design units, including 2 entities, in source file datamem.sv
-    Info (12023): Found entity 1: datamem File: C:/469labs/lab3/datamem.sv Line: 12
-    Info (12023): Found entity 2: datamem_testbench File: C:/469labs/lab3/datamem.sv Line: 70
+    Info (12023): Found entity 1: datamem File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 12
+    Info (12023): Found entity 2: datamem_testbench File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 70
 Info (12021): Found 2 design units, including 2 entities, in source file register.sv
-    Info (12023): Found entity 1: register File: C:/469labs/lab3/register.sv Line: 2
-    Info (12023): Found entity 2: register_tb File: C:/469labs/lab3/register.sv Line: 16
+    Info (12023): Found entity 1: register File: C:/469labs/lab3-64bitSingleCycleCPU/register.sv Line: 2
+    Info (12023): Found entity 2: register_tb File: C:/469labs/lab3-64bitSingleCycleCPU/register.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
-    Info (12023): Found entity 1: regfile File: C:/469labs/lab3/regfile.sv Line: 4
+    Info (12023): Found entity 1: regfile File: C:/469labs/lab3-64bitSingleCycleCPU/regfile.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file mux_64to1.sv
-    Info (12023): Found entity 1: mux_64to1 File: C:/469labs/lab3/mux_64to1.sv Line: 3
+    Info (12023): Found entity 1: mux_64to1 File: C:/469labs/lab3-64bitSingleCycleCPU/mux_64to1.sv Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file mux_32to1.sv
-    Info (12023): Found entity 1: mux_32to1 File: C:/469labs/lab3/mux_32to1.sv Line: 3
-    Info (12023): Found entity 2: mux_32to1_tb File: C:/469labs/lab3/mux_32to1.sv Line: 13
+    Info (12023): Found entity 1: mux_32to1 File: C:/469labs/lab3-64bitSingleCycleCPU/mux_32to1.sv Line: 3
+    Info (12023): Found entity 2: mux_32to1_tb File: C:/469labs/lab3-64bitSingleCycleCPU/mux_32to1.sv Line: 13
 Info (12021): Found 2 design units, including 2 entities, in source file mux_16to1.sv
-    Info (12023): Found entity 1: mux_16to1 File: C:/469labs/lab3/mux_16to1.sv Line: 3
-    Info (12023): Found entity 2: mux_16to1_tb File: C:/469labs/lab3/mux_16to1.sv Line: 13
+    Info (12023): Found entity 1: mux_16to1 File: C:/469labs/lab3-64bitSingleCycleCPU/mux_16to1.sv Line: 3
+    Info (12023): Found entity 2: mux_16to1_tb File: C:/469labs/lab3-64bitSingleCycleCPU/mux_16to1.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file library_top.sv
-    Info (12023): Found entity 1: library_top File: C:/469labs/lab3/library_top.sv Line: 2
+    Info (12023): Found entity 1: library_top File: C:/469labs/lab3-64bitSingleCycleCPU/library_top.sv Line: 2
 Info (12021): Found 2 design units, including 2 entities, in source file demux_1to8.sv
-    Info (12023): Found entity 1: demux_1to8 File: C:/469labs/lab3/demux_1to8.sv Line: 2
-    Info (12023): Found entity 2: demux_1to8_tb File: C:/469labs/lab3/demux_1to8.sv Line: 21
+    Info (12023): Found entity 1: demux_1to8 File: C:/469labs/lab3-64bitSingleCycleCPU/demux_1to8.sv Line: 2
+    Info (12023): Found entity 2: demux_1to8_tb File: C:/469labs/lab3-64bitSingleCycleCPU/demux_1to8.sv Line: 21
 Info (12021): Found 2 design units, including 2 entities, in source file demux_1to4.sv
-    Info (12023): Found entity 1: demux_1to4 File: C:/469labs/lab3/demux_1to4.sv Line: 2
-    Info (12023): Found entity 2: demux_1to4_tb File: C:/469labs/lab3/demux_1to4.sv Line: 16
+    Info (12023): Found entity 1: demux_1to4 File: C:/469labs/lab3-64bitSingleCycleCPU/demux_1to4.sv Line: 2
+    Info (12023): Found entity 2: demux_1to4_tb File: C:/469labs/lab3-64bitSingleCycleCPU/demux_1to4.sv Line: 16
 Info (12021): Found 2 design units, including 2 entities, in source file decoder5_32.sv
-    Info (12023): Found entity 1: decoder5_32 File: C:/469labs/lab3/decoder5_32.sv Line: 2
-    Info (12023): Found entity 2: decoder5_32_tb File: C:/469labs/lab3/decoder5_32.sv Line: 17
+    Info (12023): Found entity 1: decoder5_32 File: C:/469labs/lab3-64bitSingleCycleCPU/decoder5_32.sv Line: 2
+    Info (12023): Found entity 2: decoder5_32_tb File: C:/469labs/lab3-64bitSingleCycleCPU/decoder5_32.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file d_ff.sv
-    Info (12023): Found entity 1: D_FF File: C:/469labs/lab3/D_FF.sv Line: 2
+    Info (12023): Found entity 1: D_FF File: C:/469labs/lab3-64bitSingleCycleCPU/D_FF.sv Line: 2
 Info (12021): Found 2 design units, including 2 entities, in source file clock_divider.sv
-    Info (12023): Found entity 1: clock_divider File: C:/469labs/lab3/clock_divider.sv Line: 12
-    Info (12023): Found entity 2: clock_divider_testbench File: C:/469labs/lab3/clock_divider.sv Line: 23
+    Info (12023): Found entity 1: clock_divider File: C:/469labs/lab3-64bitSingleCycleCPU/clock_divider.sv Line: 12
+    Info (12023): Found entity 2: clock_divider_testbench File: C:/469labs/lab3-64bitSingleCycleCPU/clock_divider.sv Line: 23
 Info (12021): Found 2 design units, including 2 entities, in source file mux_8to1.sv
-    Info (12023): Found entity 1: mux_8to1 File: C:/469labs/lab3/mux_8to1.sv Line: 3
-    Info (12023): Found entity 2: mux_8to1_tb File: C:/469labs/lab3/mux_8to1.sv Line: 13
+    Info (12023): Found entity 1: mux_8to1 File: C:/469labs/lab3-64bitSingleCycleCPU/mux_8to1.sv Line: 3
+    Info (12023): Found entity 2: mux_8to1_tb File: C:/469labs/lab3-64bitSingleCycleCPU/mux_8to1.sv Line: 13
 Info (12021): Found 2 design units, including 2 entities, in source file mux_4to1.sv
-    Info (12023): Found entity 1: mux_4to1 File: C:/469labs/lab3/mux_4to1.sv Line: 3
-    Info (12023): Found entity 2: mux_4to1_tb File: C:/469labs/lab3/mux_4to1.sv Line: 13
+    Info (12023): Found entity 1: mux_4to1 File: C:/469labs/lab3-64bitSingleCycleCPU/mux_4to1.sv Line: 3
+    Info (12023): Found entity 2: mux_4to1_tb File: C:/469labs/lab3-64bitSingleCycleCPU/mux_4to1.sv Line: 13
 Info (12021): Found 2 design units, including 2 entities, in source file mux_2to1.sv
-    Info (12023): Found entity 1: mux_2to1 File: C:/469labs/lab3/mux_2to1.sv Line: 3
-    Info (12023): Found entity 2: mux_2to1_tb File: C:/469labs/lab3/mux_2to1.sv Line: 15
+    Info (12023): Found entity 1: mux_2to1 File: C:/469labs/lab3-64bitSingleCycleCPU/mux_2to1.sv Line: 3
+    Info (12023): Found entity 2: mux_2to1_tb File: C:/469labs/lab3-64bitSingleCycleCPU/mux_2to1.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: C:/469labs/lab3/alu.sv Line: 17
+    Info (12023): Found entity 1: alu File: C:/469labs/lab3-64bitSingleCycleCPU/alu.sv Line: 17
 Info (12021): Found 2 design units, including 2 entities, in source file addersubtractor.sv
-    Info (12023): Found entity 1: adderSubtractor File: C:/469labs/lab3/adderSubtractor.sv Line: 12
-    Info (12023): Found entity 2: adderSubtractor_tb File: C:/469labs/lab3/adderSubtractor.sv Line: 28
+    Info (12023): Found entity 1: adderSubtractor File: C:/469labs/lab3-64bitSingleCycleCPU/adderSubtractor.sv Line: 12
+    Info (12023): Found entity 2: adderSubtractor_tb File: C:/469labs/lab3-64bitSingleCycleCPU/adderSubtractor.sv Line: 28
 Info (12021): Found 2 design units, including 2 entities, in source file norzeroflag64bit.sv
-    Info (12023): Found entity 1: norZeroFlag64bit File: C:/469labs/lab3/norZeroFlag64bit.sv Line: 2
-    Info (12023): Found entity 2: norZeroFlag64bit_tb File: C:/469labs/lab3/norZeroFlag64bit.sv Line: 20
+    Info (12023): Found entity 1: norZeroFlag64bit File: C:/469labs/lab3-64bitSingleCycleCPU/norZeroFlag64bit.sv Line: 2
+    Info (12023): Found entity 2: norZeroFlag64bit_tb File: C:/469labs/lab3-64bitSingleCycleCPU/norZeroFlag64bit.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_toplevel.sv
-    Info (12023): Found entity 1: CPU_toplevel File: C:/469labs/lab3/CPU_toplevel.sv Line: 1
+    Info (12023): Found entity 1: CPU_toplevel File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file addersubtractor64.sv
-    Info (12023): Found entity 1: adderSubtractor64 File: C:/469labs/lab3/adderSubtractor64.sv Line: 11
-    Info (12023): Found entity 2: adderSubtractor64_tb File: C:/469labs/lab3/adderSubtractor64.sv Line: 29
+    Info (12023): Found entity 1: adderSubtractor64 File: C:/469labs/lab3-64bitSingleCycleCPU/adderSubtractor64.sv Line: 11
+    Info (12023): Found entity 2: adderSubtractor64_tb File: C:/469labs/lab3-64bitSingleCycleCPU/adderSubtractor64.sv Line: 29
 Info (12021): Found 2 design units, including 2 entities, in source file mux64bit_2to1.sv
-    Info (12023): Found entity 1: muxVariablebit_2to1 File: C:/469labs/lab3/mux64bit_2to1.sv Line: 1
-    Info (12023): Found entity 2: muxVariablebit_2to1_tb File: C:/469labs/lab3/mux64bit_2to1.sv Line: 14
+    Info (12023): Found entity 1: muxVariablebit_2to1 File: C:/469labs/lab3-64bitSingleCycleCPU/mux64bit_2to1.sv Line: 1
+    Info (12023): Found entity 2: muxVariablebit_2to1_tb File: C:/469labs/lab3-64bitSingleCycleCPU/mux64bit_2to1.sv Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_toplevel_tb.sv
-    Info (12023): Found entity 1: CPU_toplevel_tb File: C:/469labs/lab3/CPU_toplevel_tb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file test.sv
-    Info (12023): Found entity 1: test File: C:/469labs/lab3/test.sv Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at CPU_toplevel.sv(52): instance has no name File: C:/469labs/lab3/CPU_toplevel.sv Line: 52
-Critical Warning (10846): Verilog HDL Instantiation warning at CPU_toplevel.sv(53): instance has no name File: C:/469labs/lab3/CPU_toplevel.sv Line: 53
-Info (12127): Elaborating entity "test" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at test.sv(2): object "data" assigned a value but never read File: C:/469labs/lab3/test.sv Line: 2
-Warning (10230): Verilog HDL assignment warning at test.sv(5): truncated value with size 32 to match size of target (8) File: C:/469labs/lab3/test.sv Line: 5
-Info (10648): Verilog HDL Display System Task info at test.sv(6): PASS File: C:/469labs/lab3/test.sv Line: 6
-Warning (12158): Entity "test" contains only dangling pins
-Error (12061): Can't synthesize current design -- Top partition does not contain any logic
-Info (144001): Generated suppressed messages file C:/469labs/lab3/output_files/DE1_SoC.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 5 warnings
-    Error: Peak virtual memory: 4790 megabytes
-    Error: Processing ended: Sat Oct 18 09:27:27 2025
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:24
+    Info (12023): Found entity 1: CPU_toplevel_tb File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel_tb.sv Line: 2
+Info (12127): Elaborating entity "CPU_toplevel" for the top level hierarchy
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:c_unit" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 32
+Warning (10270): Verilog HDL Case Statement warning at controlUnit.sv(24): incomplete case statement has no default case item File: C:/469labs/lab3-64bitSingleCycleCPU/controlUnit.sv Line: 24
+Warning (10270): Verilog HDL Case Statement warning at controlUnit.sv(35): incomplete case statement has no default case item File: C:/469labs/lab3-64bitSingleCycleCPU/controlUnit.sv Line: 35
+Warning (10270): Verilog HDL Case Statement warning at controlUnit.sv(62): incomplete case statement has no default case item File: C:/469labs/lab3-64bitSingleCycleCPU/controlUnit.sv Line: 62
+Info (12128): Elaborating entity "muxVariablebit_2to1" for hierarchy "muxVariablebit_2to1:AbMux" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 35
+Info (12128): Elaborating entity "mux_2to1" for hierarchy "muxVariablebit_2to1:AbMux|mux_2to1:muxes[0].bitwiseMux" File: C:/469labs/lab3-64bitSingleCycleCPU/mux64bit_2to1.sv Line: 9
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:register_file" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 36
+Info (12128): Elaborating entity "decoder5_32" for hierarchy "regfile:register_file|decoder5_32:decoder" File: C:/469labs/lab3-64bitSingleCycleCPU/regfile.sv Line: 15
+Info (12128): Elaborating entity "demux_1to8" for hierarchy "regfile:register_file|decoder5_32:decoder|demux_1to8:top3Bit" File: C:/469labs/lab3-64bitSingleCycleCPU/decoder5_32.sv Line: 7
+Info (12128): Elaborating entity "demux_1to4" for hierarchy "regfile:register_file|decoder5_32:decoder|demux_1to4:decodeArray[0].demux" File: C:/469labs/lab3-64bitSingleCycleCPU/decoder5_32.sv Line: 12
+Info (12128): Elaborating entity "register" for hierarchy "regfile:register_file|register:registers[0].register_component" File: C:/469labs/lab3-64bitSingleCycleCPU/regfile.sv Line: 18
+Info (12128): Elaborating entity "D_FF" for hierarchy "regfile:register_file|register:registers[0].register_component|D_FF:dffs[0].flipFlop" File: C:/469labs/lab3-64bitSingleCycleCPU/register.sv Line: 11
+Info (12128): Elaborating entity "mux_32to1" for hierarchy "regfile:register_file|mux_32to1:muxRead1[0].mux1" File: C:/469labs/lab3-64bitSingleCycleCPU/regfile.sv Line: 32
+Info (12128): Elaborating entity "mux_16to1" for hierarchy "regfile:register_file|mux_32to1:muxRead1[0].mux1|mux_16to1:muxL0P1" File: C:/469labs/lab3-64bitSingleCycleCPU/mux_32to1.sv Line: 8
+Info (12128): Elaborating entity "mux_8to1" for hierarchy "regfile:register_file|mux_32to1:muxRead1[0].mux1|mux_16to1:muxL0P1|mux_8to1:muxL0P1" File: C:/469labs/lab3-64bitSingleCycleCPU/mux_16to1.sv Line: 8
+Info (12128): Elaborating entity "mux_4to1" for hierarchy "regfile:register_file|mux_32to1:muxRead1[0].mux1|mux_16to1:muxL0P1|mux_8to1:muxL0P1|mux_4to1:muxL0P1" File: C:/469labs/lab3-64bitSingleCycleCPU/mux_8to1.sv Line: 8
+Info (12128): Elaborating entity "muxVariablebit_2to1" for hierarchy "muxVariablebit_2to1:aluBInMux" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 37
+Info (12128): Elaborating entity "alu" for hierarchy "alu:ALU" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 39
+Info (12128): Elaborating entity "adderSubtractor" for hierarchy "alu:ALU|adderSubtractor:firstAdd" File: C:/469labs/lab3-64bitSingleCycleCPU/alu.sv Line: 26
+Info (12128): Elaborating entity "norZeroFlag64bit" for hierarchy "alu:ALU|norZeroFlag64bit:zeroFlag" File: C:/469labs/lab3-64bitSingleCycleCPU/alu.sv Line: 43
+Info (12128): Elaborating entity "register" for hierarchy "register:flag_reg" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 40
+Info (12128): Elaborating entity "shifter" for hierarchy "shifter:shiftModule" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 41
+Info (12128): Elaborating entity "datamem" for hierarchy "datamem:data_mem" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 45
+Warning (10175): Verilog HDL warning at datamem.sv(23): ignoring unsupported system task File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 23
+Info (10264): Verilog HDL Case Statement information at datamem.sv(43): all case item expressions in this case statement are onehot File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 43
+Error (10232): Verilog HDL error at datamem.sv(58): index 71 cannot fall outside the declared range [63:0] for vector "read_data" File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 58
+Error (10232): Verilog HDL error at datamem.sv(58): index 64 cannot fall outside the declared range [63:0] for vector "read_data" File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 58
+Warning (10240): Verilog HDL Always Construct warning at datamem.sv(55): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 55
+Error (10166): SystemVerilog RTL Coding error at datamem.sv(55): always_comb construct does not infer purely combinational logic. File: C:/469labs/lab3-64bitSingleCycleCPU/datamem.sv Line: 55
+Error (12152): Can't elaborate user hierarchy "datamem:data_mem" File: C:/469labs/lab3-64bitSingleCycleCPU/CPU_toplevel.sv Line: 45
+Info (144001): Generated suppressed messages file C:/469labs/lab3-64bitSingleCycleCPU/output_files/DE1_SoC.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 5 warnings
+    Error: Peak virtual memory: 4853 megabytes
+    Error: Processing ended: Tue Oct 21 06:44:07 2025
+    Error: Elapsed time: 00:00:38
+    Error: Total CPU time (on all processors): 00:00:19
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/469labs/lab3/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in C:/469labs/lab3-64bitSingleCycleCPU/output_files/DE1_SoC.map.smsg.
 
 

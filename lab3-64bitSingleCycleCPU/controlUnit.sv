@@ -1,7 +1,8 @@
 module controlUnit(opcode, BrTaken, UnCondBr, RegWrite, setFlags, MemWrite, MemToReg, ALUSrc, ITypetoB, Reg2Loc, shiftTrue, NegativeFlag, OverflowFlag, ZeroALUFlag, MemRead, ALUOp);
 	input logic [10:0] opcode;
-	output logic BrTaken, UnCondBr, RegWrite, setFlags, MemWrite, MemToReg, ALUSrc, ITypetoB, Reg2Loc, shiftTrue, NegativeFlag, OverflowFlag, ZeroALUFlag, MemRead;
-	output logic [3:0] ALUOp;
+	input logic NegativeFlag, OverflowFlag, ZeroALUFlag;
+	output logic BrTaken, UnCondBr, RegWrite, setFlags, MemWrite, MemToReg, ALUSrc, ITypetoB, Reg2Loc, shiftTrue, MemRead;
+	output logic [2:0] ALUOp;
 	
 	always_comb begin
 		BrTaken = 0;

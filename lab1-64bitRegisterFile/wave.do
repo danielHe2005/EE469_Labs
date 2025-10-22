@@ -8,9 +8,18 @@ add wave -noupdate /regstim/RegWrite
 add wave -noupdate /regstim/clk
 add wave -noupdate /regstim/ReadData1
 add wave -noupdate /regstim/ReadData2
+add wave -noupdate /regstim/dut/RegWrite
+add wave -noupdate /regstim/dut/clk
+add wave -noupdate /regstim/dut/WriteRegister
+add wave -noupdate /regstim/dut/ReadRegister1
+add wave -noupdate /regstim/dut/ReadRegister2
+add wave -noupdate /regstim/dut/WriteData
+add wave -noupdate /regstim/dut/ReadData1
+add wave -noupdate /regstim/dut/ReadData2
+add wave -noupdate /regstim/dut/decodeToReg
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+WaveRestoreCursors {{Cursor 1} {17500500 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -25,4 +34,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {632499050 ps} {632500050 ps}
+WaveRestoreZoom {0 ps} {664125 ns}

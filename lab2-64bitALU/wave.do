@@ -1,7 +1,16 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+add wave -noupdate /alustim/dut/A
+add wave -noupdate /alustim/dut/B
+add wave -noupdate /alustim/dut/cntrl
+add wave -noupdate /alustim/dut/result
+add wave -noupdate /alustim/dut/negative
+add wave -noupdate /alustim/dut/zero
+add wave -noupdate /alustim/dut/overflow
+add wave -noupdate /alustim/dut/carry_out
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {104309 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -16,4 +25,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {359050 ps} {360050 ps}
+WaveRestoreZoom {0 ps} {378 ns}
