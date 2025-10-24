@@ -1,0 +1,6 @@
+module forwardingControlUnit(instructionReg, instructionExec, instructionMem, AForward, BForward);
+	input logic [31:0] instructionReg, instructionExec, instructionMem;
+	output logic [1:0] AForward, BForward;
+	
+	
+endmodule

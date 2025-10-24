@@ -1,0 +1,6 @@
+module norZeroFlag64bit(in, out);
+	input logic [63:0] in;
+	output logic out;
+	
+	
+endmodule

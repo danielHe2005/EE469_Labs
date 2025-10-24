@@ -1,0 +1,962 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:36:25 on Oct 24,2025
+# vlog -reportprogress 300 ./CPU_toplevel.sv ./CPU_toplevel_tb.sv ./D_FF.sv ./adderSubtractor.sv ./adderSubtractor64.sv ./alu.sv ./clock_divider.sv ./controlUnit.sv ./datamem.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./forwardingControlUnit.sv ./instructmem.sv ./library_top.sv ./math.sv ./mux64bit_2to1.sv ./muxVariablebit_4to1.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv ./regfile.sv ./register.sv 
+# -- Compiling module CPU_toplevel
+# -- Compiling module CPU_toplevel_tb
+# -- Compiling module D_FF
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# -- Compiling module alu
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module forwardingControlUnit
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module library_top
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# -- Compiling module muxVariablebit_4to1
+# -- Compiling module muxVariablebit_4to1_tb
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	CPU_toplevel_tb
+# 	adderSubtractor_tb
+# 	adderSubtractor64_tb
+# 	clock_divider_testbench
+# 	controlUnit_tb
+# 	datamem_testbench
+# 	decoder5_32_tb
+# 	demux_1to4_tb
+# 	demux_1to8_tb
+# 	instructmem_testbench
+# 	library_top
+# 	shifter_testbench
+# 	mult_testbench
+# 	muxVariablebit_2to1_tb
+# 	muxVariablebit_4to1_tb
+# 	mux_16to1_tb
+# 	mux_2to1_tb
+# 	mux_32to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# 	register_tb
+# End time: 09:36:25 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# vsim -voptargs=""+acc"" -t 1ps -lib work CPU_toplevel_tb 
+# Start time: 09:36:25 on Oct 24,2025
+# Loading sv_std.std
+# Loading work.CPU_toplevel_tb
+# Loading work.CPU_toplevel
+# Loading work.controlUnit
+# Loading work.forwardingControlUnit
+# Loading work.muxVariablebit_2to1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.muxVariablebit_4to1
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.register
+# Loading work.shifter
+# Loading work.datamem
+# Loading work.instructmem
+# Loading work.adderSubtractor64
+# Loading work.demux_1to4
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.D_FF
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(80): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAdd4 File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(80): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(81): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAddBranch File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(81): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: Design size of 13063 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tarta  Hostname: LUSANKYA  ProcessID: 59248
+#           Attempting to use alternate WLF file "./wlftkfxech".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkfxech
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test02_AddsSubs.arm
+# Program completed at address 2432697343
+# X0 final value is correct!
+# X1 final value is correct!
+# X2 final value is correct!
+# X3 final value is correct!
+# X4 final value is correct!
+# X5 final value is correct!
+# X6 final value is correct!
+# X7 final value is correct!
+# Final flags are correct
+# ** Note: $stop    : ./CPU_toplevel_tb.sv(122)
+#    Time: 5150 us  Iteration: 1  Instance: /CPU_toplevel_tb
+# Break in Module CPU_toplevel_tb at ./CPU_toplevel_tb.sv line 122
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab4-Pipelined5CycleCPU/AddsSubsPipelineBenchmark.do
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:37:33 on Oct 24,2025
+# vlog -reportprogress 300 ./CPU_toplevel.sv ./CPU_toplevel_tb.sv ./D_FF.sv ./adderSubtractor.sv ./adderSubtractor64.sv ./alu.sv ./clock_divider.sv ./controlUnit.sv ./datamem.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./forwardingControlUnit.sv ./instructmem.sv ./library_top.sv ./math.sv ./mux64bit_2to1.sv ./muxVariablebit_4to1.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv ./regfile.sv ./register.sv 
+# -- Compiling module CPU_toplevel
+# -- Compiling module CPU_toplevel_tb
+# -- Compiling module D_FF
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# -- Compiling module alu
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module forwardingControlUnit
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module library_top
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# -- Compiling module muxVariablebit_4to1
+# -- Compiling module muxVariablebit_4to1_tb
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	CPU_toplevel_tb
+# 	adderSubtractor_tb
+# 	adderSubtractor64_tb
+# 	clock_divider_testbench
+# 	controlUnit_tb
+# 	datamem_testbench
+# 	decoder5_32_tb
+# 	demux_1to4_tb
+# 	demux_1to8_tb
+# 	instructmem_testbench
+# 	library_top
+# 	shifter_testbench
+# 	mult_testbench
+# 	muxVariablebit_2to1_tb
+# 	muxVariablebit_4to1_tb
+# 	mux_16to1_tb
+# 	mux_2to1_tb
+# 	mux_32to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# 	register_tb
+# End time: 09:37:33 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# End time: 09:37:34 on Oct 24,2025, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 15
+# vsim -voptargs=""+acc"" -t 1ps -lib work CPU_toplevel_tb 
+# Start time: 09:37:34 on Oct 24,2025
+# Loading sv_std.std
+# Loading work.CPU_toplevel_tb
+# Loading work.CPU_toplevel
+# Loading work.controlUnit
+# Loading work.forwardingControlUnit
+# Loading work.muxVariablebit_2to1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.muxVariablebit_4to1
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.register
+# Loading work.shifter
+# Loading work.datamem
+# Loading work.instructmem
+# Loading work.adderSubtractor64
+# Loading work.demux_1to4
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.D_FF
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(80): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAdd4 File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(80): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(81): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAddBranch File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(81): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: Design size of 13063 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tarta  Hostname: LUSANKYA  ProcessID: 59248
+#           Attempting to use alternate WLF file "./wlftddta14".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftddta14
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test03_CbzB.arm
+# Program completed at address 335544320
+# X0 final value is correct!
+# X1 final value is correct!
+# X2 final value is correct!
+# X3 final value is correct!
+# X4 final value is correct!
+# X5 final value is correct!
+# ** Note: $stop    : ./CPU_toplevel_tb.sv(122)
+#    Time: 5150 us  Iteration: 1  Instance: /CPU_toplevel_tb
+# Break in Module CPU_toplevel_tb at ./CPU_toplevel_tb.sv line 122
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab4-Pipelined5CycleCPU/CbzBPipelineBenchmark.do
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:38:46 on Oct 24,2025
+# vlog -reportprogress 300 ./CPU_toplevel.sv ./CPU_toplevel_tb.sv ./D_FF.sv ./adderSubtractor.sv ./adderSubtractor64.sv ./alu.sv ./clock_divider.sv ./controlUnit.sv ./datamem.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./forwardingControlUnit.sv ./instructmem.sv ./library_top.sv ./math.sv ./mux64bit_2to1.sv ./muxVariablebit_4to1.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv ./regfile.sv ./register.sv 
+# -- Compiling module CPU_toplevel
+# -- Compiling module CPU_toplevel_tb
+# -- Compiling module D_FF
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# -- Compiling module alu
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module forwardingControlUnit
+# -- Compiling module instructmem
+# ** Error: ./instructmem.sv(46): (vlog-2163) Macro `BENCHMARK is undefined.
+# ** Error: ./instructmem.sv(47): (vlog-2163) Macro `BENCHMARK is undefined.
+# -- Compiling module instructmem_testbench
+# -- Compiling module library_top
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# -- Compiling module muxVariablebit_4to1
+# -- Compiling module muxVariablebit_4to1_tb
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# End time: 09:38:47 on Oct 24,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 8
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 9
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./*.sv""
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:39:10 on Oct 24,2025
+# vlog -reportprogress 300 ./CPU_toplevel.sv ./CPU_toplevel_tb.sv ./D_FF.sv ./adderSubtractor.sv ./adderSubtractor64.sv ./alu.sv ./clock_divider.sv ./controlUnit.sv ./datamem.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./forwardingControlUnit.sv ./instructmem.sv ./library_top.sv ./math.sv ./mux64bit_2to1.sv ./muxVariablebit_4to1.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv ./regfile.sv ./register.sv 
+# -- Compiling module CPU_toplevel
+# -- Compiling module CPU_toplevel_tb
+# -- Compiling module D_FF
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# -- Compiling module alu
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module forwardingControlUnit
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module library_top
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# -- Compiling module muxVariablebit_4to1
+# -- Compiling module muxVariablebit_4to1_tb
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	CPU_toplevel_tb
+# 	adderSubtractor_tb
+# 	adderSubtractor64_tb
+# 	clock_divider_testbench
+# 	controlUnit_tb
+# 	datamem_testbench
+# 	decoder5_32_tb
+# 	demux_1to4_tb
+# 	demux_1to8_tb
+# 	instructmem_testbench
+# 	library_top
+# 	shifter_testbench
+# 	mult_testbench
+# 	muxVariablebit_2to1_tb
+# 	muxVariablebit_4to1_tb
+# 	mux_16to1_tb
+# 	mux_2to1_tb
+# 	mux_32to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# 	register_tb
+# End time: 09:39:10 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# End time: 09:39:11 on Oct 24,2025, Elapsed time: 0:01:37
+# Errors: 5, Warnings: 23
+# vsim -voptargs=""+acc"" -t 1ps -lib work CPU_toplevel_tb 
+# Start time: 09:39:12 on Oct 24,2025
+# Loading sv_std.std
+# Loading work.CPU_toplevel_tb
+# Loading work.CPU_toplevel
+# Loading work.controlUnit
+# Loading work.forwardingControlUnit
+# Loading work.muxVariablebit_2to1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.muxVariablebit_4to1
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.register
+# Loading work.shifter
+# Loading work.datamem
+# Loading work.instructmem
+# Loading work.adderSubtractor64
+# Loading work.demux_1to4
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.D_FF
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(80): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAdd4 File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(80): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(81): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAddBranch File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(81): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: Design size of 13063 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tarta  Hostname: LUSANKYA  ProcessID: 59248
+#           Attempting to use alternate WLF file "./wlftcwgfr7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcwgfr7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test04_LdurStur.arm
+# Program completed at address 2432697343
+# X0 final value is correct!
+# X1 final value is correct!
+# X2 final value is correct!
+# X3 final value is correct!
+# X4 final value is correct!
+# X5 final value is correct!
+# X6 final value is correct!
+# X7 final value is correct!
+# Datamem[0] final value is correct!
+# Datamem[8] final value is correct!
+# Datamem[16] final value is correct!
+# ** Note: $stop    : ./CPU_toplevel_tb.sv(122)
+#    Time: 5150 us  Iteration: 1  Instance: /CPU_toplevel_tb
+# Break in Module CPU_toplevel_tb at ./CPU_toplevel_tb.sv line 122
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab4-Pipelined5CycleCPU/LdurSturPipelineBenchmark.do
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:40:19 on Oct 24,2025
+# vlog -reportprogress 300 ./CPU_toplevel.sv ./CPU_toplevel_tb.sv ./D_FF.sv ./adderSubtractor.sv ./adderSubtractor64.sv ./alu.sv ./clock_divider.sv ./controlUnit.sv ./datamem.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./forwardingControlUnit.sv ./instructmem.sv ./library_top.sv ./math.sv ./mux64bit_2to1.sv ./muxVariablebit_4to1.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv ./regfile.sv ./register.sv 
+# -- Compiling module CPU_toplevel
+# -- Compiling module CPU_toplevel_tb
+# -- Compiling module D_FF
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# -- Compiling module alu
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module forwardingControlUnit
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module library_top
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# -- Compiling module muxVariablebit_4to1
+# -- Compiling module muxVariablebit_4to1_tb
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	CPU_toplevel_tb
+# 	adderSubtractor_tb
+# 	adderSubtractor64_tb
+# 	clock_divider_testbench
+# 	controlUnit_tb
+# 	datamem_testbench
+# 	decoder5_32_tb
+# 	demux_1to4_tb
+# 	demux_1to8_tb
+# 	instructmem_testbench
+# 	library_top
+# 	shifter_testbench
+# 	mult_testbench
+# 	muxVariablebit_2to1_tb
+# 	muxVariablebit_4to1_tb
+# 	mux_16to1_tb
+# 	mux_2to1_tb
+# 	mux_32to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# 	register_tb
+# End time: 09:40:19 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# End time: 09:40:20 on Oct 24,2025, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 15
+# vsim -voptargs=""+acc"" -t 1ps -lib work CPU_toplevel_tb 
+# Start time: 09:40:20 on Oct 24,2025
+# Loading sv_std.std
+# Loading work.CPU_toplevel_tb
+# Loading work.CPU_toplevel
+# Loading work.controlUnit
+# Loading work.forwardingControlUnit
+# Loading work.muxVariablebit_2to1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.muxVariablebit_4to1
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.register
+# Loading work.shifter
+# Loading work.datamem
+# Loading work.instructmem
+# Loading work.adderSubtractor64
+# Loading work.demux_1to4
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.D_FF
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(80): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAdd4 File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(80): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(81): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAddBranch File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(81): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: Design size of 13063 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tarta  Hostname: LUSANKYA  ProcessID: 59248
+#           Attempting to use alternate WLF file "./wlftxs7dsq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxs7dsq
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test05_Blt.arm
+# Program completed at address 335544320
+# X0 final value is correct!
+# X1 final value is correct!
+# ** Note: $stop    : ./CPU_toplevel_tb.sv(122)
+#    Time: 5150 us  Iteration: 1  Instance: /CPU_toplevel_tb
+# Break in Module CPU_toplevel_tb at ./CPU_toplevel_tb.sv line 122
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab4-Pipelined5CycleCPU/BltPipelineBenchmark.do
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:41:16 on Oct 24,2025
+# vlog -reportprogress 300 ./CPU_toplevel.sv ./CPU_toplevel_tb.sv ./D_FF.sv ./adderSubtractor.sv ./adderSubtractor64.sv ./alu.sv ./clock_divider.sv ./controlUnit.sv ./datamem.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./forwardingControlUnit.sv ./instructmem.sv ./library_top.sv ./math.sv ./mux64bit_2to1.sv ./muxVariablebit_4to1.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv ./regfile.sv ./register.sv 
+# -- Compiling module CPU_toplevel
+# -- Compiling module CPU_toplevel_tb
+# -- Compiling module D_FF
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# -- Compiling module alu
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module forwardingControlUnit
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module library_top
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# -- Compiling module muxVariablebit_4to1
+# -- Compiling module muxVariablebit_4to1_tb
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	CPU_toplevel_tb
+# 	adderSubtractor_tb
+# 	adderSubtractor64_tb
+# 	clock_divider_testbench
+# 	controlUnit_tb
+# 	datamem_testbench
+# 	decoder5_32_tb
+# 	demux_1to4_tb
+# 	demux_1to8_tb
+# 	instructmem_testbench
+# 	library_top
+# 	shifter_testbench
+# 	mult_testbench
+# 	muxVariablebit_2to1_tb
+# 	muxVariablebit_4to1_tb
+# 	mux_16to1_tb
+# 	mux_2to1_tb
+# 	mux_32to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# 	register_tb
+# End time: 09:41:16 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# End time: 09:41:17 on Oct 24,2025, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 15
+# vsim -voptargs=""+acc"" -t 1ps -lib work CPU_toplevel_tb 
+# Start time: 09:41:17 on Oct 24,2025
+# Loading sv_std.std
+# Loading work.CPU_toplevel_tb
+# Loading work.CPU_toplevel
+# Loading work.controlUnit
+# Loading work.forwardingControlUnit
+# Loading work.muxVariablebit_2to1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.muxVariablebit_4to1
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.register
+# Loading work.shifter
+# Loading work.datamem
+# Loading work.instructmem
+# Loading work.adderSubtractor64
+# Loading work.demux_1to4
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.D_FF
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(80): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAdd4 File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(80): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(81): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAddBranch File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(81): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: Design size of 13063 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tarta  Hostname: LUSANKYA  ProcessID: 59248
+#           Attempting to use alternate WLF file "./wlft92im4c".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft92im4c
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test06_AndEorLsr.arm
+# Program completed at address 2432697343
+# X0 final value is correct!
+# X1 final value is correct!
+# X2 final value is correct!
+# X3 final value is correct!
+# ** Note: $stop    : ./CPU_toplevel_tb.sv(122)
+#    Time: 5150 us  Iteration: 1  Instance: /CPU_toplevel_tb
+# Break in Module CPU_toplevel_tb at ./CPU_toplevel_tb.sv line 122
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab4-Pipelined5CycleCPU/AndEorLsrPipelineBenchmark.do
+do runlab.do
+# 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:42:44 on Oct 24,2025
+# vlog -reportprogress 300 ./CPU_toplevel.sv ./CPU_toplevel_tb.sv ./D_FF.sv ./adderSubtractor.sv ./adderSubtractor64.sv ./alu.sv ./clock_divider.sv ./controlUnit.sv ./datamem.sv ./decoder5_32.sv ./demux_1to4.sv ./demux_1to8.sv ./forwardingControlUnit.sv ./instructmem.sv ./library_top.sv ./math.sv ./mux64bit_2to1.sv ./muxVariablebit_4to1.sv ./mux_16to1.sv ./mux_2to1.sv ./mux_32to1.sv ./mux_4to1.sv ./mux_64to1.sv ./mux_8to1.sv ./norZeroFlag64bit.sv ./regfile.sv ./register.sv 
+# -- Compiling module CPU_toplevel
+# -- Compiling module CPU_toplevel_tb
+# -- Compiling module D_FF
+# -- Compiling module adderSubtractor
+# -- Compiling module adderSubtractor_tb
+# -- Compiling module adderSubtractor64
+# -- Compiling module adderSubtractor64_tb
+# -- Compiling module alu
+# -- Compiling module clock_divider
+# -- Compiling module clock_divider_testbench
+# -- Compiling module controlUnit
+# -- Compiling module controlUnit_tb
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module demux_1to4
+# -- Compiling module demux_1to4_tb
+# -- Compiling module demux_1to8
+# -- Compiling module demux_1to8_tb
+# -- Compiling module forwardingControlUnit
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module library_top
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module muxVariablebit_2to1
+# -- Compiling module muxVariablebit_2to1_tb
+# -- Compiling module muxVariablebit_4to1
+# -- Compiling module muxVariablebit_4to1_tb
+# -- Compiling module mux_16to1
+# -- Compiling module mux_16to1_tb
+# -- Compiling module mux_2to1
+# -- Compiling module mux_2to1_tb
+# -- Compiling module mux_32to1
+# -- Compiling module mux_32to1_tb
+# -- Compiling module mux_4to1
+# -- Compiling module mux_4to1_tb
+# -- Compiling module mux_64to1
+# -- Compiling module mux_8to1
+# -- Compiling module mux_8to1_tb
+# -- Compiling module norZeroFlag64bit
+# -- Compiling module norZeroFlag64bit_tb
+# -- Compiling module regfile
+# ** Warning: ./regfile.sv(27): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(28): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(29): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(37): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(38): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ./regfile.sv(39): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	CPU_toplevel_tb
+# 	adderSubtractor_tb
+# 	adderSubtractor64_tb
+# 	clock_divider_testbench
+# 	controlUnit_tb
+# 	datamem_testbench
+# 	decoder5_32_tb
+# 	demux_1to4_tb
+# 	demux_1to8_tb
+# 	instructmem_testbench
+# 	library_top
+# 	shifter_testbench
+# 	mult_testbench
+# 	muxVariablebit_2to1_tb
+# 	muxVariablebit_4to1_tb
+# 	mux_16to1_tb
+# 	mux_2to1_tb
+# 	mux_32to1_tb
+# 	mux_4to1_tb
+# 	mux_8to1_tb
+# 	norZeroFlag64bit_tb
+# 	register_tb
+# End time: 09:42:44 on Oct 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# End time: 09:42:45 on Oct 24,2025, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 15
+# vsim -voptargs=""+acc"" -t 1ps -lib work CPU_toplevel_tb 
+# Start time: 09:42:45 on Oct 24,2025
+# Loading sv_std.std
+# Loading work.CPU_toplevel_tb
+# Loading work.CPU_toplevel
+# Loading work.controlUnit
+# Loading work.forwardingControlUnit
+# Loading work.muxVariablebit_2to1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.muxVariablebit_4to1
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.register
+# Loading work.shifter
+# Loading work.datamem
+# Loading work.instructmem
+# Loading work.adderSubtractor64
+# Loading work.demux_1to4
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.D_FF
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(80): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAdd4 File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(80): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(81): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAddBranch File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(81): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: Design size of 13063 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tarta  Hostname: LUSANKYA  ProcessID: 59248
+#           Attempting to use alternate WLF file "./wlft1y2qzk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1y2qzk
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test10_forwarding.arm
+# Program completed at address 2432697343
+# X0 final value is correct!
+# X1 final value is correct!
+# X2 final value is correct!
+# X3 final value is correct!
+# X4 final value is correct!
+# X5 final value is correct!
+# X6 final value is correct!
+# X7 final value is correct!
+# X8 final value is correct!
+# X9 final value is correct!
+# X10 final value is correct!
+# X14 final value is correct!
+# X15 final value is correct!
+# X16 final value is correct!
+# X17 final value is correct!
+# X18 final value is correct!
+# Datamem[0] final value is correct!
+# Datamem[8] final value is correct!
+# ** Note: $stop    : ./CPU_toplevel_tb.sv(122)
+#    Time: 50150 us  Iteration: 1  Instance: /CPU_toplevel_tb
+# Break in Module CPU_toplevel_tb at ./CPU_toplevel_tb.sv line 122
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/469labs/lab4-Pipelined5CycleCPU/forwardingPipelineBenchmark.do
+# End time: 09:46:45 on Oct 24,2025, Elapsed time: 0:04:00
+# Errors: 0, Warnings: 7

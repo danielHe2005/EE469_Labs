@@ -206,3 +206,60 @@ do runlab.do
 # 	register_tb
 # End time: 16:59:42 on Oct 21,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 8
+# End time: 16:59:45 on Oct 21,2025, Elapsed time: 0:01:17
+# Errors: 3, Warnings: 13
+# vsim -voptargs=""+acc"" -t 1ps -lib work CPU_toplevel_tb 
+# Start time: 16:59:45 on Oct 21,2025
+# Loading sv_std.std
+# Loading work.CPU_toplevel_tb
+# Loading work.CPU_toplevel
+# Loading work.controlUnit
+# Loading work.muxVariablebit_2to1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.demux_1to8
+# Loading work.alu
+# Loading work.adderSubtractor
+# Loading work.mux_2to1
+# Loading work.norZeroFlag64bit
+# Loading work.register
+# Loading work.shifter
+# Loading work.datamem
+# Loading work.instructmem
+# Loading work.adderSubtractor64
+# Loading work.demux_1to4
+# Loading work.mux_32to1
+# Loading work.mux_16to1
+# Loading work.mux_8to1
+# Loading work.mux_4to1
+# Loading work.D_FF
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(52): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAdd4 File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(52): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) ./CPU_toplevel.sv(53): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_toplevel_tb/dut/PCAddBranch File: ./adderSubtractor64.sv
+# ** Warning: (vsim-3722) ./CPU_toplevel.sv(53): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: Design size of 11466 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: C:/469labs/lab3-64bitSingleCycleCPU/benchmarks/test12_CRC16.arm
+# Program completed at address 335544320
+# X0 final value is correct!
+# X1 final value is correct!
+# X2 final value is correct!
+# X3 final value is correct!
+# X4 final value is correct!
+# X5 final value is correct!
+# X6 final value is correct!
+# X7 final value is correct!
+# X8 final value is correct!
+# X9 final value is correct!
+# X10 final value is correct!
+# ** Note: $stop    : ./CPU_toplevel_tb.sv(122)
+#    Time: 180150 us  Iteration: 1  Instance: /CPU_toplevel_tb
+# Break in Module CPU_toplevel_tb at ./CPU_toplevel_tb.sv line 122
+# End time: 18:41:42 on Oct 21,2025, Elapsed time: 1:41:57
+# Errors: 0, Warnings: 5
